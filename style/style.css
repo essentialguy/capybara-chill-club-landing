@@ -67,7 +67,7 @@ html, body {
     background-size: 100% 100%;
     /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
     /* filter: blur(150px); */
-    z-index: -99;
+    z-index: -99; 
 
 }
 .Vector2 {
