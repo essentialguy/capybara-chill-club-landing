@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Sequel Sans'; 
+	src: url(../fonts/Sequel_Sans_Roman_Head.ttf) format('truetype'); 
+}
+nav{
+    width: 40%;
+    height: 60px;
+    left: 13.3%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    color: #FFFFFF;
+}
+.imageLogo {
+    width: 104px;
+    cursor: pointer;
+}
+.nav_element {
+    /* font-weight: 360; */
+    font-size: 15px;
+    /* line-height: 18px; */
+    /* text-transform: uppercase; */
+    font-family: 'Sequel Sans';
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
