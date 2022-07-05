@@ -1,0 +1,38 @@
+/* .boxFirst .container{
+    max-width: 1520px;
+} */
+.boxFirst{
+    /* height: 95vh; */
+    width: 100%;
+    position: relative;
+
+}
+.capybara_welcome {
+    position: relative;
+    left: 50%;
+    margin-top: 185px;
+}
+.title_welcome {
+	font-family: 'SequelSans-MediumHead';
+    font-weight: normal; 
+    /* font-family: 'SequelSans-RomanHead';  */
+
+    /* font-style: normal; */
+    line-height: 110%;
+    letter-spacing: 0.16em;
+    font-size: 100px;
+    position: absolute;
+    top: 239px;
+    left: 13%;
+    color: #FFFFFF;
+}
+.MintNow {
+	font-family: 'SequelSans-RomanDisp'; 
+    font-weight: normal; 
+    font-size: 36px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 535px;
+    left: 15.5%;
+    cursor: pointer;
+}

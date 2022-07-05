@@ -1,4 +1,12 @@
 @font-face {
-	font-family: 'Sequel Sans'; 
-	src: url(./Sequel_Sans_Roman_Head.otf)  format('truetype'); 
+	font-family: 'SequelSans-RomanHead'; 
+	src: url(./SequelSans-RomanHead.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'SequelSans-MediumHead'; 
+	src: url(./SequelSans-MediumHead.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'SequelSans-RomanDisp'; 
+	src: url(./SequelSans-RomanDisp.otf)  format('truetype'); 
 }
