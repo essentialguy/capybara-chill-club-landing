@@ -4,8 +4,10 @@
 .boxFirst{
     /* height: 95vh; */
     width: 100%;
-    position: relative;
-
+    position: sticky;
+    z-index: -10;
+    /* height: 100vh; */
+    top: 0;
 }
 .capybara_welcome {
     position: relative;
