@@ -7,9 +7,11 @@
 }
 
 .TheChillClubRules_block_title {
-    width: 27%;
+    width: 31%;
     height: 100%;
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 
 .TheChillClubRules_block_title_h1 {
