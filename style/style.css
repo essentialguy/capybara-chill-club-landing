@@ -12,8 +12,8 @@ body{
     margin:0 auto;
     height: 100%;
 }
-html, body {
-    overflow-x: hidden;
+html {
+    overflow-x:hidden;
 } 
 
 .App {
@@ -27,8 +27,7 @@ html, body {
     /* position: sticky; */
     /* height: 100vh; */
     top: 0;
-    width: 100vw;
-
+    width: 100%;
 }
 .container {
     position: relative;
@@ -39,7 +38,6 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-
 }
 .background_Vector{
     position: absolute;
@@ -158,6 +156,7 @@ html, body {
     background: url('../img/Rectangle.png');
     /* background-size: 100% 100%; */
     z-index: -10;
+    /* overflow: hidden; */
     opacity: 0.05;
 }
 

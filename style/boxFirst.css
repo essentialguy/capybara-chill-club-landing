@@ -5,9 +5,11 @@
     /* height: 95vh; */
     width: 100%;
     position: sticky;
-    z-index: -10;
+    /* height: 100vh; */
+    /* z-index: -10; */
     /* height: 100vh; */
     top: 0;
+    overflow: hidden;
 }
 .capybara_welcome {
     position: relative;
@@ -27,6 +29,7 @@
     top: 239px;
     left: 13%;
     color: #FFFFFF;
+    overflow: hidden;
 }
 .MintNow {
 	font-family: 'SequelSans-RomanDisp'; 
