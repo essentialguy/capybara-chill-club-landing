@@ -82,7 +82,7 @@
     position: relative;
     width: 2553.1px; 
 	height: 148px; 
-    top: 25vh;
+    margin-top: 25vh;
     left: -365px;
 	background-image: url(../img/firstLine.png);
     transform: rotate(3.627deg);
