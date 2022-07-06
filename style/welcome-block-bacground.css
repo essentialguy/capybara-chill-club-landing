@@ -77,3 +77,18 @@
     left: 7%;
     width: 80%;
 }
+
+.CapybaraLenta{
+    position: relative;
+    width: 2553.1px; 
+	height: 148px; 
+    top: 25vh;
+    left: -365px;
+	background-image: url(../img/firstLine.png);
+    transform: rotate(3.627deg);
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+    animation: animatedBackground 16400s linear infinite;
+    /* border: 1px solid #292929; */
+    z-index: 0;
+}
