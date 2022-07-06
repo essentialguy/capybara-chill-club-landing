@@ -10,5 +10,18 @@
     width: 27%;
     height: 100%;
     background-color: #FFFFFF;
+}
 
+.TheChillClubRules_block_title_h1 {
+    font-family: 'SequelSans-MediumHead';
+    font-weight: 365;
+    font-size: 200px;
+    line-height: 100%;
+    text-align: justify;
+    text-transform: capitalize;
+    background: linear-gradient(162.63deg, #00ADA3 27.67%, #00726B 108.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
 }
