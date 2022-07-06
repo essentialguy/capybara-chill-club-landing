@@ -2,7 +2,7 @@ nav{
     width: 40%;
     height: 60px;
     left: 13.3%;
-    z-index: 100;
+    z-index: 110;
     display: flex;
     justify-content: space-between;
     align-items: center;
