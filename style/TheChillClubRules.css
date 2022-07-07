@@ -4,6 +4,8 @@
     width: 100%;
     background-color: #00C1B6;
     margin-top: 45vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .TheChillClubRules_block_title {
@@ -26,4 +28,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     /* text-fill-color: transparent; */
+}
+
+.TheChillClubRules_block_text {
+    width: 31%;
+    height: 100%;
+    background-color: #D7FFFD;
+    display: flex;
+    align-items: center;
 }
