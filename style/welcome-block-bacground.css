@@ -81,10 +81,15 @@
 
 .CapybaraLenta_block {
     position: absolute;
-    left: -365px;
+    /* left: -365px; */
+    right: 0%;
+    /* width: 2553.1px;  */
+    height: 396px;     
+    /* width: 100%;  */
     width: 2553.1px; 
-    /* height: 148px;  */
-    overflow: hidden;
+    right: -150px;
+    /* margin-top: 10vh; */
+    overflow-x: hidden;
 }
 
 .CapybaraLenta{
@@ -92,13 +97,15 @@
     width: 2553.1px; 
     /* width: 100%;  */
 	height: 148px; 
-    margin-top: 25vh;
-    left: -365px;
+    margin-top: 148px;
+    /* left: -365px; */
 	background-image: url(../img/firstLine.png);
     transform: rotate(3.627deg);
     background-position: 0px 0px;
 	background-repeat: repeat-x;
     animation: animatedBackground 16400s linear infinite;
     /* border: 1px solid #292929; */
-    z-index: 0;
+    z-index: 0;    
+    overflow-x: hidden;
+
 }
