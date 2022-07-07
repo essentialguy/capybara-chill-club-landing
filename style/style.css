@@ -268,7 +268,7 @@ img {
     object-fit:cover;
 }
 
-@media only screen and (max-width: 1795px) {
+/* @media only screen and (max-width: 1795px) {
     .Capybaras {
         top: 85%;
     }
@@ -339,4 +339,4 @@ img {
     .Capybaras2 {
         top: -4%;
     }
-}
+} */
