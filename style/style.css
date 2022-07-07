@@ -268,75 +268,40 @@ img {
     object-fit:cover;
 }
 
-/* @media only screen and (max-width: 1795px) {
-    .Capybaras {
-        top: 85%;
-    }
-    .Capybaras2 {
-        top: 20%;
-    }
+@media only screen and (max-width: 1795px) {
+    
 }
 
 
 @media only screen and (max-width: 1400px) and (max-height: 880px ){
-    .Capybaras {
-        top: 73% !important;
-    }
-    .Capybaras2 {
-        top: -14% !important;
-    }
+    
 }
 
 @media only screen and (max-width: 1400px) and (max-height: 670px ){
-    .Capybaras {
-        top: 83% !important;
-    }
-    .Capybaras2 {
-        top: -39% !important;
-    }
+    
 }
 
 @media only screen and (max-width: 1400px) {
-    .Capybaras {
-        top: 95%;
+    .capybara_welcome {
+        left: 20% !important;
+        transition: 2s;
     }
-    .Capybaras2 {
-        top: 16%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .capybara_welcome {
+        transition: 2s;
     }
 }
 
 @media only screen and (max-width: 1034px) {
-    .Capybaras {
-        top: 105%;
-    }
-    .Capybaras2 {
-        top: 12%;
-    }
+
 }
 
 @media only screen and (max-width: 734px) {
-    .logo{
-        width: 410px;
-        height: 168px;
-    }
-    .Capybaras {
-        top: 115%;
-    }
-    .Capybaras2 {
-        top: 0%;
-    }
+
 }
 
 @media only screen and (max-width: 414px) {
-    .logo{
-        width: 345px;
-        height: 142px;
-    }
 
-    .Capybaras {
-        top: 124%;
-    }
-    .Capybaras2 {
-        top: -4%;
-    }
-} */
+}
