@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100%;
     background-color: #00C1B6;
-    margin-top: 45vh;
+    margin-top: 50vh;
     display: flex;
     flex-direction: row;
 }
@@ -31,9 +31,46 @@
 }
 
 .TheChillClubRules_block_text {
-    width: 31%;
+    width: 30%;
     height: 100%;
     background-color: #D7FFFD;
     display: flex;
     align-items: center;
+    display: none;
+}
+
+.TheChillClubRules_block .active {
+    display: flex;
+}
+
+.block_number_conteiner_block_number {
+    font-family: 'SequelSans-LightHead';
+    font-weight: normal;
+    width: 13%;
+    font-size: 48px;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: #FFFFFF;
+    position: relative;
+    /* bottom:  */
+    /* display: none; */
+}
+
+.block_number_conteiner_block_number div {
+    position: absolute;
+    bottom: 244px;
+}
+
+.first {
+    background-color: #92F4EF;
+}
+
+.second {
+    background-color: #32DCD2;
+}
+
+.third {
+    background-color: #00C1B6;
 }

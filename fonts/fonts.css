@@ -10,3 +10,7 @@
 	font-family: 'SequelSans-RomanDisp'; 
 	src: url(./SequelSans-RomanDisp.otf)  format('truetype'); 
 }
+@font-face {
+	font-family: 'SequelSans-LightHead'; 
+	src: url(./SequelSans-LightHead.otf)  format('truetype'); 
+}
