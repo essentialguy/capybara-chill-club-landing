@@ -17,6 +17,7 @@
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);  
     z-index: 100;
+    overflow-x: hidden;
 }
 
 .block-bacground .welcome-block {
@@ -92,5 +93,4 @@
     animation: animatedBackground 16400s linear infinite;
     /* border: 1px solid #292929; */
     z-index: 0;
-    overflow: hidden;
 }
