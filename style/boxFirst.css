@@ -15,6 +15,7 @@
     position: relative;
     left: 50%;
     margin-top: 185px;
+    bottom: -4px;
 }
 .title_welcome {
 	font-family: 'SequelSans-MediumHead';
