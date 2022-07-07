@@ -1,5 +1,5 @@
 nav{
-    width: 40%;
+    width: 60%;
     height: 60px;
     left: 13.3%;
     z-index: 110;
@@ -24,7 +24,7 @@ nav{
 }
 @media only screen and (max-width: 1400px) {
     nav{
-        /* width: 50%; */
+        width: 800px;
     }
 }
 
