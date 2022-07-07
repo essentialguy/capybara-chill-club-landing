@@ -6,10 +6,44 @@ window.onload = function () {
     }, 500)
 }
 
-let block_number = document.querySelectorAll(".block_number_conteiner_block_number");
+let block_number_0 = document.querySelectorAll(".block_number_conteiner_block_number")[0];
+let block_number_1 = document.querySelectorAll(".block_number_conteiner_block_number")[1];
+let block_number_2 = document.querySelectorAll(".block_number_conteiner_block_number")[2];
 
-block_number.forEach(element => {
-    element.addEventListener("mouseover", e => {
-        console.log(element)
-    })
-});
+// let block_text = document.querySelectorAll(".TheChillClubRules_block_text");
+let block_text_0 = document.querySelectorAll(".TheChillClubRules_block_text")[0];
+let block_text_1 = document.querySelectorAll(".TheChillClubRules_block_text")[1];
+let block_text_2 = document.querySelectorAll(".TheChillClubRules_block_text")[2];
+
+block_number_0.addEventListener("mouseover", e => {
+    block_text_0.classList.add('active');
+    block_text_1.classList.remove('active');
+    block_text_2.classList.remove('active');
+})
+// block_number_0.addEventListener("mouseout", e => {
+//     block_text_0.classList.remove('active');
+//     block_text_1.classList.remove('active');
+//     block_text_2.classList.remove('active');
+// });
+
+block_number_1.addEventListener("mouseover", e => {
+    block_text_0.classList.remove('active');
+    block_text_1.classList.add('active');
+    block_text_2.classList.remove('active');
+})
+// block_number_1.addEventListener("mouseout", e => {
+//     block_text_0.classList.remove('active');
+//     block_text_1.classList.remove('active');
+//     block_text_2.classList.remove('active');
+// });
+
+block_number_2.addEventListener("mouseover", e => {
+    block_text_0.classList.remove('active');
+    block_text_1.classList.remove('active');
+    block_text_2.classList.add('active');
+})
+// block_number_2.addEventListener("mouseout", e => {
+//     block_text_0.classList.remove('active');
+//     block_text_1.classList.remove('active');
+//     block_text_2.classList.remove('active');
+// })

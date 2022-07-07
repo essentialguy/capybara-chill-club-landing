@@ -56,6 +56,8 @@
     position: relative;
     /* bottom:  */
     /* display: none; */
+    transition: 2s;
+
 }
 
 .block_number_conteiner_block_number div {
