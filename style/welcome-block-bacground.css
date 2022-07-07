@@ -89,7 +89,7 @@
     width: 2553.1px; 
     right: -150px;
     /* margin-top: 10vh; */
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .CapybaraLenta{
@@ -106,6 +106,6 @@
     animation: animatedBackground 16400s linear infinite;
     /* border: 1px solid #292929; */
     z-index: 0;    
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
