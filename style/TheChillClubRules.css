@@ -66,16 +66,19 @@
 }
 
 .first {
-    width: 13%;
-    background-color: #92F4EF;
+    min-width: 13%;
+    background-color: #92F4EF;    transition: 1s;
+
 }
 
 .second {
-    width: 13%;
-    background-color: #32DCD2;
+    min-width: 13%;
+    background-color: #32DCD2;    transition: 1s;
+
 }
 
 .third {
-    width: 13%;
-    background-color: #00C1B6;
+    min-width: 13%;
+    background-color: #00C1B6;    transition: 1s;
+
 }
