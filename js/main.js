@@ -28,7 +28,9 @@ block_number_0.addEventListener("mouseover", e => {
 })
 block_number_0.addEventListener("mouseout", e => {
     block_number_0.style.width = '33%';
-    block_text_0.classList.add('active');
+    block_number_1.style.width = '33%';
+    block_number_2.style.width = '33%';    
+    // block_text_0.classList.add('active');
 });
 
 block_number_1.addEventListener("mouseover", e => {
@@ -41,9 +43,11 @@ block_number_1.addEventListener("mouseover", e => {
     block_number_2.style.width = '25%';
 })
 block_number_1.addEventListener("mouseout", e => {
+    block_number_0.style.width = '33%';
     block_number_1.style.width = '33%';
-    block_text_0.classList.add('active');
-    block_text_1.classList.remove('active');
+    block_number_2.style.width = '33%';
+    // block_text_0.classList.add('active');
+    // block_text_1.classList.remove('active');
 });
 
 block_number_2.addEventListener("mouseover", e => {
@@ -56,7 +60,9 @@ block_number_2.addEventListener("mouseover", e => {
     block_number_2.style.width = '50%';
 })
 block_number_2.addEventListener("mouseout", e => {
-    block_number_2.style.width = '33%';
-    block_text_0.classList.add('active');
-    block_text_2.classList.remove('active');
+    block_number_0.style.width = '33%';
+    block_number_1.style.width = '33%';
+    block_number_2.style.width = '33%';    
+    // block_text_0.classList.add('active');
+    // block_text_2.classList.remove('active');
 })
