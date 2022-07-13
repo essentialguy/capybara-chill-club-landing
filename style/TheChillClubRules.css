@@ -9,7 +9,7 @@
 }
 
 .TheChillClubRules_block_title {
-    width: 31%;
+    /* width: 31%; */
     height: 100%;
     background-color: #FFFFFF;
     display: flex;
@@ -43,6 +43,12 @@
     display: flex;
 }
 
+.blockContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .block_number_conteiner_block_number {
     font-family: 'SequelSans-LightHead';
     font-weight: normal;
@@ -66,18 +72,21 @@
 }
 
 .first {
-    min-width: 13%;
+    width: 33%;
+    height: 100%;
     background-color: #92F4EF;
 
 }
 
 .second {
-    min-width: 13%;
+    width: 33%;
+    height: 100%;
     background-color: #32DCD2;
 }
 
 .third {
-    min-width: 13%;
+    width: 33%;
+    height: 100%;    
     background-color: #00C1B6;   
 
 }
