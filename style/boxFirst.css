@@ -18,7 +18,7 @@
     left: 50%;
     margin-top: 185px;
     bottom: -4px;
-    transition: 2s;
+    transition: 1s;
     opacity: 1;
 }
 .title_welcome {
@@ -34,7 +34,7 @@
     left: 13%;
     color: #FFFFFF;
     overflow: hidden;
-    transition: 2s;
+    transition: 1s;
     opacity: 1;
 
 }
@@ -47,7 +47,11 @@
     top: 535px;
     left: 15.5%;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
     opacity: 1;
 
+}
+
+.oparcityobject {
+    opacity: 0;
 }
