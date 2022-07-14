@@ -75,22 +75,22 @@ let title_welcome = document.querySelector(".title_welcome");
 let MintNow = document.querySelector(".MintNow");
 //можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 
-// window.addEventListener("scroll", e => {
-//     if (window.scrollY >= $(window).height()) {
-//         background_Vector.style.top = '100vh';
-//         background_Vector.style.position = 'absolute';
-//         capybara_welcome.style.opacity = '0';
-//         title_welcome.style.opacity = '0';
-//         MintNow.style.opacity = '0';
-//     }
-//     else {
-//         background_Vector.style.top = '0vh';
-//         background_Vector.style.position = 'fixed';
-//         capybara_welcome.style.opacity = '1';
-//         title_welcome.style.opacity = '1';
-//         MintNow.style.opacity = '1';
-//     }
-// })
+window.addEventListener("scroll", e => {
+    if (window.scrollY >= $(window).height()) {
+        background_Vector.style.top = '100vh';
+        background_Vector.style.position = 'absolute';
+        capybara_welcome.style.opacity = '0';
+        title_welcome.style.opacity = '0';
+        MintNow.style.opacity = '0';
+    }
+    else {
+        background_Vector.style.top = '0vh';
+        background_Vector.style.position = 'fixed';
+        capybara_welcome.style.opacity = '1';
+        title_welcome.style.opacity = '1';
+        MintNow.style.opacity = '1';
+    }
+})
 
 // window.onscroll = function () {
 //     if (window.scrollY >= $(window).height()) {

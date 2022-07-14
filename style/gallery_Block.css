@@ -10,9 +10,10 @@
 }
 .capybara_none {
     margin:0;
-    background: url('../img/light_yellow_back.png');
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
+    /* background: url('../img/light_yellow_back.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    background: #ECFFE6;
     position:relative;
     z-index: -12;
     width: 25%;
@@ -29,7 +30,7 @@
     background-size: 100% 100%;
     z-index: -1;
     /* bottom: -4px; */
-    /* filter: blur(10px); */
+    filter: blur(10px);
 }
 .capybara_image {
     position: absolute;
