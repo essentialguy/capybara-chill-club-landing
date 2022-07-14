@@ -111,14 +111,17 @@ window.addEventListener("scroll", e => {
 
 
 const capybara_none = document.querySelectorAll('.capybara_none');
+const filterimage = document.querySelectorAll('.filterimage');
 
 // let i = 0;
 for (let i = 0; i <= 7; i++) {
     capybara_none[i].addEventListener("mouseover", e => {
-        console.log(capybara_none[i])
+        // console.log(capybara_none[i])
+        filterimage[i].classList.add('noneFilter')
     })
     capybara_none[i].addEventListener("mouseout", e => {
-        console.log(capybara_none[i])
+        // console.log(capybara_none[i])
+        filterimage[i].classList.remove('noneFilter')
 
     })
 }
