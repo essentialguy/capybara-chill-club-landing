@@ -136,7 +136,7 @@ for (let i = 0; i <= 7; i++) {
         // console.log(capybara_none[i])
         const filter_gallery = document.querySelectorAll('.filter_gallery');
 
-        filterimage[i].classList.remove('noneFilter')
+        filterimage[i].classList.remove('noneFilter');
         rectOparcity[i].classList.add('rectOparcity');
         filterimage[i].innerHTML = '<img class="filter_gallery" src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
 
