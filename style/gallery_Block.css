@@ -10,7 +10,23 @@
     /* width: 20%; */
     /* position: absolute; */
     margin:0;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* backdrop-filter: url('../img/filter_gallery.png'); */
+    position:relative;
+    z-index: -12;
+
 }
+
+.filterimage {
+    position: relative;
+    background-image: url('../img/filter_gallery.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+/* .capybara_none::before {
+    background-image: url('../img/capybara_none.png');
+
+} */
