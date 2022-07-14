@@ -29,7 +29,7 @@ block_number_0.addEventListener("mouseover", e => {
 block_number_0.addEventListener("mouseout", e => {
     block_number_0.style.width = '33%';
     block_number_1.style.width = '33%';
-    block_number_2.style.width = '33%';    
+    block_number_2.style.width = '33%';
     // block_text_0.classList.add('active');
 });
 
@@ -62,7 +62,31 @@ block_number_2.addEventListener("mouseover", e => {
 block_number_2.addEventListener("mouseout", e => {
     block_number_0.style.width = '33%';
     block_number_1.style.width = '33%';
-    block_number_2.style.width = '33%';    
+    block_number_2.style.width = '33%';
     // block_text_0.classList.add('active');
     // block_text_2.classList.remove('active');
 })
+
+
+
+let background_Vector = document.querySelector(".background_Vector");
+let capybara_welcome = document.querySelector(".capybara_welcome");
+let title_welcome = document.querySelector(".title_welcome");
+let MintNow = document.querySelector(".MintNow");
+
+window.onscroll = function () {
+    if (window.scrollY > $(window).height()) {
+        background_Vector.style.top = '100vh';
+        background_Vector.style.position = 'absolute';
+        capybara_welcome.style.oparcity = '0';
+        title_welcome.style.oparcity = '0';
+        MintNow.style.oparcity = '0';
+    }
+    else {
+        background_Vector.style.top = '0vh';
+        background_Vector.style.position = 'fixed';
+        capybara_welcome.style.oparcity = '1';
+        title_welcome.style.oparcity = '1';
+        MintNow.style.oparcity = '1';
+    }
+}
