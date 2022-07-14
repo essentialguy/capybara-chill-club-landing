@@ -41,7 +41,7 @@
     background-size: 100% 100%;
     /* bottom: -4px; */
     filter: blur(10px);
-    transition: 0.5s;
+    transition: 2s;
 }
 .filter_gallery {
     position: relative;
