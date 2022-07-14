@@ -108,3 +108,18 @@ window.addEventListener("scroll", e => {
 //         MintNow.style.opacity = '1';
 //     }
 // }
+
+
+const capybara_none = document.querySelectorAll('.capybara_none');
+
+// let i = 0;
+for (let i = 0; i <= 7; i++) {
+    capybara_none[i].addEventListener("mouseover", e => {
+        console.log(capybara_none[i])
+    })
+    capybara_none[i].addEventListener("mouseout", e => {
+        console.log(capybara_none[i])
+
+    })
+}
+

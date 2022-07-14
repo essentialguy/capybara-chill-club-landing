@@ -16,11 +16,10 @@
     /* background-size: 100% 100%; */
     background-color: #ECFFE6;
     position:relative;
-    z-index: -12;
     width: 25%;
     top:-2px;
     opacity: 1;
-
+    transition: 2s;
 }
 
 .rectOparcity {
@@ -40,7 +39,6 @@
     background-image: url('../img/capybara_none.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
     /* bottom: -4px; */
     filter: blur(10px);
 }
