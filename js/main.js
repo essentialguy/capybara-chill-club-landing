@@ -112,16 +112,42 @@ window.addEventListener("scroll", e => {
 
 const capybara_none = document.querySelectorAll('.capybara_none');
 const filterimage = document.querySelectorAll('.filterimage');
+// const filter_gallery = document.querySelectorAll('.filter_gallery');
+const rectOparcity = document.querySelectorAll('.rectOparcity');
 
 // let i = 0;
 for (let i = 0; i <= 7; i++) {
-    capybara_none[i].addEventListener("mouseover", e => {
+    capybara_none[i].addEventListener("mouseenter", e => {
         // console.log(capybara_none[i])
+        const filter_gallery = document.querySelectorAll('.filter_gallery');
+
         filterimage[i].classList.add('noneFilter')
-    })
-    capybara_none[i].addEventListener("mouseout", e => {
+        rectOparcity[i].classList.remove('rectOparcity');
+        if (filter_gallery[i]) {
+            filter_gallery[i].remove();
+        }
+        console.log(1)
+
+        // filterimage[i].style.height = '0';
+        // filterimage[i].src="img/gallery_visibility.png";
+        // document.getElementById('filterimage')[i].src="";
+    });
+    capybara_none[i].addEventListener("mouseleave", e => {
         // console.log(capybara_none[i])
+        const filter_gallery = document.querySelectorAll('.filter_gallery');
+
         filterimage[i].classList.remove('noneFilter')
+        rectOparcity[i].classList.add('rectOparcity');
+        filterimage[i].innerHTML = '<img class="filter_gallery" src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
+
+        console.log(2)
+
+        // filterimage[i].innerHTML = '<img class="filter_gallery"src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
+        // filterimage[i].style.height = '100%';
+
+        // filterimage[i].src="img/filter_gallery.png";
+
+        // filterimage[i].src='img/filter_gallery.png';
 
     })
 }
