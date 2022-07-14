@@ -73,7 +73,7 @@ let background_Vector = document.querySelector(".background_Vector");
 let capybara_welcome = document.querySelector(".capybara_welcome");
 let title_welcome = document.querySelector(".title_welcome");
 let MintNow = document.querySelector(".MintNow");
-
+//можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 window.onscroll = function () {
     if (window.scrollY >= $(window).height()) {
         background_Vector.style.top = '100vh';
