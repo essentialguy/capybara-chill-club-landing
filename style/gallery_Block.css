@@ -1,7 +1,6 @@
 .gallery_Block {
     height: auto;
     width: 90%;
-    /* background-color: rgb(163, 116, 116, 0.4); */
     position: relative;
     margin: 190px auto 0px auto;
     display: flex;
@@ -10,38 +9,29 @@
     flex-wrap: wrap;
 }
 .capybara_none {
-    /* width: 20%; */
-    /* position: absolute; */
     margin:0;
     background: url('../img/light_yellow_back.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    /* backdrop-filter: url('../img/filter_gallery.png'); */
     position:relative;
     z-index: -12;
     width: 25%;
-    backdrop-filter: blur(40px);
+    top:-2px
+
 }
 
 .filterimage {
     position: relative;
-    /* background-image: url('../img/filter_gallery.png');
-    background-repeat: no-repeat;
-    background-position: center; */
     width: 100%;
-    height: auto;
+    height: 100%;
     background-image: url('../img/capybara_none.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    backdrop-filter: blur(40px);
     z-index: -1;
-    bottom: -4px;
+    /* bottom: -4px; */
+    /* filter: blur(10px); */
 }
 .capybara_image {
     position: absolute;
 
 }
-/* .capybara_none::before {
-    background-image: url('../img/capybara_none.png');
-
-} */
