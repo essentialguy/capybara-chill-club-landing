@@ -37,6 +37,8 @@
     /* align-items: center; */
     /* display: none; */
     transition: 1s;    width: 0;
+    position: relative;
+
 
 }
 
@@ -52,8 +54,12 @@
     font-size: 36px;
     text-align: left;
     text-transform: capitalize;
-    left: 44%;
+    left: 68px;
     top: 288px;
+}
+
+.numBlockNm {
+    right: 75px; 
 }
 
 .active {
@@ -96,7 +102,7 @@
 .first {
     /* width: 33%; */
     width: 169px;
-        min-width: 169px;
+    min-width: 169px;
     height: 100%;
     background-color: #92F4EF;
     z-index: 1;
@@ -106,7 +112,6 @@
     /* width: 33%; */
     width: 169px;
     min-width: 169px;
-
     height: 100%;
     background-color: #32DCD2;
     z-index: 2;
@@ -121,4 +126,61 @@
     background-color: #00C1B6;   
     z-index: 3;
 
+}
+
+
+
+.textBlockNumber {
+    position: absolute;
+    /* opacity: 0; */
+    width: 409px;
+    /* left: -338%; */
+    text-align: left;
+
+    font-family: 'SequelSans-LightHead';
+    font-weight: normal;
+    /* width: 13%; */
+    font-size: 32px;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    /* bottom:  */
+    /* display: none; */
+    transition: 1s;
+    z-index: 100;
+    /* min-width: 169px; */
+    left: 38%;
+    height: 100vh;
+}
+.textBlockNumber .topTextBlockNumber {
+    position: relative;
+    top: 200px;
+}
+.first_textBlockNumber {
+    position:fixed;
+    color: #00A5AF;
+    /* left: -612px; */
+    opacity: 0;
+
+}
+.second_textBlockNumber {
+    position:fixed;
+    color: #FFFFFF;
+    /* left: -762px; */
+    opacity: 0;
+
+}
+.third_textBlockNumber {
+    position:fixed;
+    color: #FFFFFF;
+    /* left: -812px; */
+    opacity: 0;
+
+}
+.boldFontWeight {
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 20px;
 }
