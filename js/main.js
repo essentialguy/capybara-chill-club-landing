@@ -27,8 +27,7 @@ block_number_0.addEventListener("mouseover", e => {
 
     block_text.classList.remove('active');
     textBlockNumber_0.style.opacity = '1'
-
-    textBlockNumber_0.style.zIndex = '10'
+    textBlockNumber_0.style.zIndex = '10';
 
     // block_text_0.classList.add('active');
     // block_text_1.classList.remove('active');
@@ -44,21 +43,18 @@ block_number_0.addEventListener("mouseout", e => {
     block_number_1.style.width = '169px';
     block_number_2.style.width = '169px';
     block_text.classList.add('active');
-    textBlockNumber_0.style.opacity = '0'
-
-    textBlockNumber_0.style.zIndex = '-1'
-
+    textBlockNumber_0.style.opacity = '0';
+    textBlockNumber_0.style.zIndex = '-1';
 });
 
 block_number_1.addEventListener("mouseover", e => {
     // block_text_0.classList.remove('active');
     // block_text_1.classList.add('active');
     // block_text_2.classList.remove('active');
+
     block_text.classList.remove('active');
     textBlockNumber_1.style.opacity = '1'
-
     textBlockNumber_1.style.zIndex = '10'
-
 
     block_number_0.style.width = '0px';
     block_number_0.style.minWidth = '0px';
@@ -72,10 +68,9 @@ block_number_1.addEventListener("mouseout", e => {
     block_number_2.style.width = '169px';
     block_number_0.style.minWidth = '169px';
     block_text.classList.add('active');
-    textBlockNumber_1.style.opacity = '0'
 
-    textBlockNumber_1.style.zIndex = '-1'
-
+    textBlockNumber_1.style.opacity = '0';
+    textBlockNumber_1.style.zIndex = '-1';
 
     // block_text_0.classList.add('active');
     // block_text_1.classList.remove('active');
@@ -85,14 +80,12 @@ block_number_2.addEventListener("mouseover", e => {
     // block_text_0.classList.remove('active');
     // block_text_1.classList.remove('active');
     // block_text_2.classList.add('active');
+
     block_text.classList.remove('active');
     block_number_1.style.minWidth = '0px';
     block_number_0.style.minWidth = '0px';
-    textBlockNumber_2.style.opacity = '1'
-
-    textBlockNumber_2.style.zIndex = '10'
-
-
+    textBlockNumber_2.style.opacity = '1';
+    textBlockNumber_2.style.zIndex = '10';
 
     block_number_0.style.width = '0px';
     block_number_1.style.width = '0px';
@@ -104,10 +97,10 @@ block_number_2.addEventListener("mouseout", e => {
     block_number_2.style.width = '169px';
     block_number_1.style.minWidth = '169px';
     block_number_0.style.minWidth = '169px';
-    block_text.classList.add('active');
-    textBlockNumber_2.style.opacity = '0'
 
-    textBlockNumber_2.style.zIndex = '-1'
+    block_text.classList.add('active');
+    textBlockNumber_2.style.opacity = '0';
+    textBlockNumber_2.style.zIndex = '-1';
 
     // block_text_0.classList.add('active');
     // block_text_2.classList.remove('active');
@@ -164,15 +157,14 @@ const rectOparcity = document.querySelectorAll('.rectOparcity');
 // let i = 0;
 for (let i = 0; i <= 7; i++) {
     capybara_none[i].addEventListener("mouseenter", e => {
-        // console.log(capybara_none[i])
         const filter_gallery = document.querySelectorAll('.filter_gallery');
 
         filterimage[i].classList.add('noneFilter')
         rectOparcity[i].classList.remove('rectOparcity');
-        if (filter_gallery[i]) {
-            filter_gallery[i].remove();
-        }
-        console.log(1)
+
+        // if (filter_gallery[i]) {
+        //     filter_gallery[i].remove();
+        // }
 
         // filterimage[i].style.height = '0';
         // filterimage[i].src="img/gallery_visibility.png";
@@ -180,13 +172,11 @@ for (let i = 0; i <= 7; i++) {
     });
     capybara_none[i].addEventListener("mouseleave", e => {
         // console.log(capybara_none[i])
-        const filter_gallery = document.querySelectorAll('.filter_gallery');
+        // const filter_gallery = document.querySelectorAll('.filter_gallery');
 
         filterimage[i].classList.remove('noneFilter');
         rectOparcity[i].classList.add('rectOparcity');
-        filterimage[i].innerHTML = '<img class="filter_gallery" src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
-
-        console.log(2)
+        // filterimage[i].innerHTML = '<img class="filter_gallery" src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
 
         // filterimage[i].innerHTML = '<img class="filter_gallery"src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
         // filterimage[i].style.height = '100%';

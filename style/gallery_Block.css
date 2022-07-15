@@ -19,7 +19,7 @@
     width: 25%;
     top:-2px;
     opacity: 1;
-    transition: 4s;
+    /* transition: 4s; */
 }
 
 .rectOparcity {
@@ -41,13 +41,14 @@
     background-size: 100% 100%;
     /* bottom: -4px; */
     filter: blur(10px);
-    /* transition: 4s; */
+
+    transition: 2s;
 }
 .filter_gallery {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: 4s;
+    /* transition: 4s; */
 
     /* top: -100% */
 }
@@ -56,7 +57,7 @@
 }
 
 .noneFilter {
-    filter: none;
+    filter: blur(0px);
 }
 
 .first_capybara_gallery {
