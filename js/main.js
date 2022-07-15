@@ -158,13 +158,20 @@ const rectOparcity = document.querySelectorAll('.rectOparcity');
 for (let i = 0; i <= 7; i++) {
     capybara_none[i].addEventListener("mouseenter", e => {
         const filter_gallery = document.querySelectorAll('.filter_gallery');
+        filterimage[i].style.transition = '0.5s';
+        rectOparcity[i].style.opacity = '0';
 
         filterimage[i].classList.add('noneFilter')
-        rectOparcity[i].classList.remove('rectOparcity');
+        // rectOparcity[i].classList.remove('rectOparcity');
+
 
         // if (filter_gallery[i]) {
-        //     filter_gallery[i].remove();
+            // filter_gallery[i].remove();
         // }
+
+        
+        filter_gallery[i].style.transition = '1s';
+        filter_gallery[i].style.opacity = '0';
 
         // filterimage[i].style.height = '0';
         // filterimage[i].src="img/gallery_visibility.png";
@@ -173,9 +180,17 @@ for (let i = 0; i <= 7; i++) {
     capybara_none[i].addEventListener("mouseleave", e => {
         // console.log(capybara_none[i])
         // const filter_gallery = document.querySelectorAll('.filter_gallery');
+        filterimage[i].style.transition = '8s';
+        rectOparcity[i].style.opacity = '0.05';
 
         filterimage[i].classList.remove('noneFilter');
-        rectOparcity[i].classList.add('rectOparcity');
+
+
+        filter_gallery[i].style.transition = '3s';
+        filter_gallery[i].style.opacity = '1';
+        // rectOparcity[i].classList.add('rectOparcity');
+
+
         // filterimage[i].innerHTML = '<img class="filter_gallery" src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
 
         // filterimage[i].innerHTML = '<img class="filter_gallery"src="img/filter_gallery.png" id="filter_gallery" alt=""/>'
@@ -189,12 +204,11 @@ for (let i = 0; i <= 7; i++) {
 }
 
 
-
 $(document).bind( 'mousewheel', function (e) { 
-    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*500); 
+    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
     e.preventDefault(); 
     e.stopPropagation(); 
     $(document.body).stop().animate( { 
          scrollTop : nt 
-     } , 2500 , 'easeInOutCubic' );  
+     } , 500 , 'easeInOutCubic' );  
 } )

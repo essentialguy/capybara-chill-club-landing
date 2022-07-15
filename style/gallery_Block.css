@@ -30,6 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    transition: 2s;
 }
 
 .filterimage {
@@ -42,12 +43,14 @@
     /* bottom: -4px; */
     filter: blur(10px);
 
-    transition: 2s;
+    /* transition: 1s; */
 }
+
 .filter_gallery {
     position: relative;
     width: 100%;
     height: 100%;
+    
     /* transition: 4s; */
 
     /* top: -100% */
