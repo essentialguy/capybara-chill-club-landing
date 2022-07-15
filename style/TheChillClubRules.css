@@ -31,22 +31,30 @@
 }
 
 .TheChillClubRules_block_text {
-    width: 30%;
     height: 100%;
     background-color: #D7FFFD;
     display: flex;
     align-items: center;
-    display: none;
+    /* display: none; */
+    transition: 1s;    width: 0;
+
 }
 
-.TheChillClubRules_block .active {
-    display: flex;
+.TheChillClubRules_block_text_text {
+    position: absolute;
+}
+
+.active {
+    /* display: flex; */
+        width: 110%;
+
 }
 
 .blockContainer {
     display: flex;
     flex-direction: row;
     width: 100%;
+
 }
 
 .block_number_conteiner_block_number {
@@ -63,30 +71,38 @@
     /* bottom:  */
     /* display: none; */
     transition: 1s;
+    width: 169px;
 
 }
 
 .block_number_conteiner_block_number div {
     position: absolute;
     bottom: 244px;
+    right: 75px;
 }
 
 .first {
-    width: 33%;
+    /* width: 33%; */
+    /* width: 169px; */
     height: 100%;
     background-color: #92F4EF;
-
+    z-index: 1;
 }
 
 .second {
-    width: 33%;
+    /* width: 33%; */
+    /* width: 169px; */
     height: 100%;
     background-color: #32DCD2;
+    z-index: 2;
+
 }
 
 .third {
-    width: 33%;
+    /* width: 33%; */
+    /* width: 169px; */
     height: 100%;    
     background-color: #00C1B6;   
+    z-index: 3;
 
 }
