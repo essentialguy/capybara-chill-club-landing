@@ -149,10 +149,10 @@
     /* bottom:  */
     /* display: none; */
     transition: 1s;
-    z-index: 100;
+    z-index: -1;
     /* min-width: 169px; */
     left: 38%;
-    height: 100vh;
+    height: 0vh;
 }
 .textBlockNumber .topTextBlockNumber {
     position: relative;
