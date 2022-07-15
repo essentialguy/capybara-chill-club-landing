@@ -23,10 +23,12 @@
     line-height: 100%;
     text-align: justify;
     text-transform: capitalize;
-    background: linear-gradient(162.63deg, #00ADA3 27.67%, #00726B 108.86%);
+    background: linear-gradient(162.63deg, #00ADA3 27.67%, #00726B 108.86%), url('../img/Rectangle.png');
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
     /* text-fill-color: transparent; */
 }
 
@@ -36,7 +38,8 @@
     display: flex;
     /* align-items: center; */
     /* display: none; */
-    transition: 1s;    width: 0;
+    transition: 1s;    
+    width: 0;
     position: relative;
 
 

@@ -46,6 +46,10 @@
     /* transition: 1s; */
 }
 
+.numBlockNm {
+    transition: 0.3s;
+}
+
 .filter_gallery {
     position: relative;
     width: 100%;

@@ -26,7 +26,7 @@ let block_text = document.querySelector(".TheChillClubRules_block_text");
 block_number_0.addEventListener("mouseover", e => {
 
     block_text.classList.remove('active');
-    textBlockNumber_0.style.opacity = '1'
+    textBlockNumber_0.style.opacity = '1';
     textBlockNumber_0.style.zIndex = '10';
 
     // block_text_0.classList.add('active');
@@ -53,14 +53,21 @@ block_number_1.addEventListener("mouseover", e => {
     // block_text_2.classList.remove('active');
 
     block_text.classList.remove('active');
-    textBlockNumber_1.style.opacity = '1'
-    textBlockNumber_1.style.zIndex = '10'
+    textBlockNumber_1.style.opacity = '1';
+    textBlockNumber_1.style.zIndex = '10';
+
+
+
+    // block_number_0.style.transition = '1s';
+    block_number_0_textNum.style.opacity = '0';
+
 
     block_number_0.style.width = '0px';
     block_number_0.style.minWidth = '0px';
     
     block_number_1.style.width = '100%';
     block_number_2.style.width = '169px';
+
 })
 block_number_1.addEventListener("mouseout", e => {
     block_number_0.style.width = '169px';
@@ -72,35 +79,53 @@ block_number_1.addEventListener("mouseout", e => {
     textBlockNumber_1.style.opacity = '0';
     textBlockNumber_1.style.zIndex = '-1';
 
+
+    // block_number_0.style.transition = '2s';
+    block_number_0_textNum.style.opacity = '1';
+
+
     // block_text_0.classList.add('active');
     // block_text_1.classList.remove('active');
 });
 
 block_number_2.addEventListener("mouseover", e => {
-    // block_text_0.classList.remove('active');
-    // block_text_1.classList.remove('active');
-    // block_text_2.classList.add('active');
-
     block_text.classList.remove('active');
-    block_number_1.style.minWidth = '0px';
+
+    block_number_0.style.opacity = '0';
+    block_number_1.style.opacity = '0';
+
     block_number_0.style.minWidth = '0px';
+    block_number_1.style.minWidth = '0px';
+
     textBlockNumber_2.style.opacity = '1';
+
     textBlockNumber_2.style.zIndex = '10';
+
+    block_number_1_textNum.style.opacity = '0';
+    block_number_0_textNum.style.opacity = '0';
 
     block_number_0.style.width = '0px';
     block_number_1.style.width = '0px';
     block_number_2.style.width = '100%';
 })
 block_number_2.addEventListener("mouseout", e => {
+    block_text.classList.add('active');
+
+    block_number_0.style.opacity = '1';
+    block_number_1.style.opacity = '1';
+
     block_number_0.style.width = '169px';
     block_number_1.style.width = '169px';
     block_number_2.style.width = '169px';
     block_number_1.style.minWidth = '169px';
     block_number_0.style.minWidth = '169px';
 
-    block_text.classList.add('active');
     textBlockNumber_2.style.opacity = '0';
     textBlockNumber_2.style.zIndex = '-1';
+
+
+    block_number_1_textNum.style.opacity = '1';
+    block_number_0_textNum.style.opacity = '1';
 
     // block_text_0.classList.add('active');
     // block_text_2.classList.remove('active');
@@ -186,7 +211,7 @@ for (let i = 0; i <= 7; i++) {
         filterimage[i].classList.remove('noneFilter');
 
 
-        filter_gallery[i].style.transition = '3s';
+        filter_gallery[i].style.transition = '6s';
         filter_gallery[i].style.opacity = '1';
         // rectOparcity[i].classList.add('rectOparcity');
 
