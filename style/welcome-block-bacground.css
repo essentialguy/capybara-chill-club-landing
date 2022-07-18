@@ -142,6 +142,10 @@ hyphens: auto;
     .block-bacground {
         padding-top: 125px;
     }
+    .block-bacground {
+        height: 650vh;
+    }
+    
 }
 
 @media only screen and (max-width: 734px) {
@@ -184,5 +188,8 @@ hyphens: auto;
     }
     .block-bacground {
         padding-top: 85px;
+    }
+    .block-bacground {
+        height: 850vh;
     }
 }

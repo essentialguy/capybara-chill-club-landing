@@ -15,6 +15,8 @@
     position: absolute;
     top: 30%;
     width: 100%;
+    transform: translateY(-50%);
+
 }
 .faq-block__title {
 
@@ -45,7 +47,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.faq-full summary{
+.faq-full details summary{
     font-size: 64px;
     font-family: 'SequelSans-MediumHead';
     font-weight: normal;
@@ -63,7 +65,7 @@
 .faq-full summary:before{
     content: '+';
     position: absolute;
-    top: 0;
+    top: 30%;
     right: 0;
     color: #fff;
     transform: translateY(-25%);
@@ -79,4 +81,52 @@
     font-weight: normal;
     color: #FFFFFF;
     width: 70%;
+}
+
+details[open] {
+    animation: slide .3s linear;
+}
+
+@keyframes slide {
+    0%    { opacity: 0; transform:  translate(0, -10px); }
+    100%  { opacity: 1; transform:  translate(0, 0); }
+}
+
+@media only screen and (max-width: 1510px) {
+    .faq-full details summary{
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 1331px) {
+    .faq-full details summary{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1034px) {
+    .faq-full details summary{
+        font-size: 32px;
+    }
+    .faq-details-bottom {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .faq-full details summary{
+        font-size: 26px;
+    }
+    .faq-details-bottom {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .faq-full details summary{
+        font-size: 18px;
+    }
+    .faq-details-bottom {
+        font-size: 12px;
+    }
 }
