@@ -81,6 +81,20 @@
     top: 239px;
 }
 
+@media  only screen and (max-width: 1510px) and (max-height: 990px) {
+    /* .capybara_welcome {
+        margin-top: 185px !important;
+        left: 45%;
+    } */
+}
+
+@media  only screen and (max-width: 1510px) and (max-height: 890px) {
+    /* .capybara_welcome {
+        margin-top: 85px !important;
+        left: 45%;
+    } */
+}
+
 
 @media only screen and (max-width: 1510px) {
     .title_welcome {

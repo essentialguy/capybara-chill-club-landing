@@ -2,12 +2,18 @@
     height: auto;
     width: 90%;
     position: relative;
-    margin: 90px auto 0px auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     opacity: 1;
+}
+.gallery {
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 .capybara_none {
     margin:0;
@@ -24,7 +30,7 @@
 
 .rectOparcity {
     opacity: 0.05;
-    background-image: url('../img/Rectangle.png');
+    background-image: url('../img/Rectangle.svg');
     position: absolute;
     top: 0;
     left: 0;

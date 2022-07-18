@@ -11,13 +11,14 @@ body{
     position: relative;
     margin:0 auto;
     height: 100%;
+    overflow-x: hidden!important;
 }
 html {
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 } 
 
 .App {
-    height: 7680px;
+    height: 700vh;
     width: 100%;
     /* background: url('../img/background.png') no-repeat; */
     scroll-behavior: smooth;
@@ -158,9 +159,11 @@ html {
     height: 7680px;
     background: url('../img/Rectangle.png');
     /* background-size: 100% 100%; */
-    z-index: 10;
+    z-index: 100;
+    mix-blend-mode: soft-light;
+
     /* overflow: hidden; */
-    opacity: 0.05;
+    /* opacity: 0.05; */
 }
 
 .Vector {
@@ -172,7 +175,7 @@ html {
     /* height: 100%; */
     left: -40%;
     top: -339px;
-    background: url('../img/bacground.png') no-repeat;
+    background: url('../img/bacground.svg') no-repeat;
     background-size: 100% 100%;
 }
 

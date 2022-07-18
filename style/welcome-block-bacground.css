@@ -1,7 +1,7 @@
 .block-bacground {
     top: 0;
     width: 90vw;
-    height: 400vh;
+    height: 550vh;
     /* max-width: 1520px; */
     margin: 0 auto;
     padding-top: 184px;
@@ -12,12 +12,18 @@
     /* border-top-left-radius: 50em;
     border-top-right-radius: 50em; */
     background-repeat: repeat;
-    background-color: rgba(255, 255, 255, 0.2); 
-    box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 0%);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background: url('../img/Rectangle.svg'), rgba(255, 255, 255, 0.2);
+
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../img/Rectangle.png');  */
+    /* mix-blend-mode: soft-light; */
+
+    /* box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 0%); */
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);  
-    z-index: 100;
+    z-index: 10;
 }
+
 
 .block-bacground .welcome-block {
     max-height: 100vh;
