@@ -76,6 +76,7 @@ html {
     top: 7vh;
     background: url('../img/Vector2.svg') no-repeat;
     background-size: 100% 100%;
+    /* background-color: linear-gradient(323.42deg, #15C6BB 42.95%, #17AEB8 66.83%, rgba(51, 208, 199, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     /* background: linear-gradient(323.42deg, #30D9CF 42.95%, #17AEB8 66.83%, rgba(62, 227, 217, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     z-index: -100;
 }
