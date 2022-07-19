@@ -11,10 +11,10 @@ body{
     position: relative;
     margin:0 auto;
     height: 100%;
-    overflow-x: hidden!important;
+    overflow-x: hidden;
 }
 html {
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 } 
 
 .App {
