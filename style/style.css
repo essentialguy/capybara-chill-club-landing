@@ -14,7 +14,7 @@ body{
     overflow-x: hidden!important;
 }
 html {
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 } 
 
 .App {
