@@ -175,6 +175,9 @@ hyphens: auto;
     .CapybaraLenta {
         margin-top: 28px;
     }
+    .block-bacground {
+        height: 750vh;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -193,6 +196,6 @@ hyphens: auto;
         padding-top: 85px;
     }
     .block-bacground {
-        height: 850vh;
+        height: 700vh;
     }
 }
