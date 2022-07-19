@@ -229,7 +229,9 @@
 }
 
 @media only screen and (max-width: 734px) {
-    
+    .TheChillClubRules_block_title_h1 {
+        font-size: 68px;
+    }
 }
 
 @media only screen and (max-width: 414px) {
