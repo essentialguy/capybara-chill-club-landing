@@ -30,7 +30,7 @@
 
 .rectOparcity {
     opacity: 0.05;
-    background-image: url('../img/Rectangle.svg');
+    /* background-image: url('../img/Rectangle.svg'); */
     position: absolute;
     top: 0;
     left: 0;

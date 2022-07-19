@@ -18,7 +18,7 @@ html {
 } 
 
 .App {
-    height: 700vh;
+    height: 100%; /*1*/
     width: 100%;
     /* background: url('../img/background.png') no-repeat; */
     scroll-behavior: smooth;
@@ -171,7 +171,7 @@ html {
     height: 3418.48px;
     width: 200%;
     left: -50%;
-    top: 3075px;
+    top: 1575px;
     background: url('../img/Vector9.svg') no-repeat;
     background-size: 100% 100%;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
@@ -186,7 +186,7 @@ html {
     height: 2986.08px;
     width: 200%;
     left: -60%;
-    top: 5818.84px;
+    top: 3818.84px;
     background: url('../img/Vector10.svg') no-repeat;
     background-size: 100% 100%;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
@@ -198,7 +198,7 @@ html {
 .rectangle {
     position: absolute;
     width: 100%;
-    height: 7680px;
+    height: 100%;
     background: url('../img/Rectangle.svg');
     /* background-size: 100% 100%; */
     z-index: 10;
