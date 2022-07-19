@@ -22,7 +22,6 @@
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);  
     z-index: 10;
-    /* overflow-y: hidden; */
 }
 
 

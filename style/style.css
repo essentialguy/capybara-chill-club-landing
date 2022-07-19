@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    overflow:hidden;
-
 }
 body{
     width: 100%;
@@ -13,10 +11,10 @@ body{
     position: relative;
     margin:0 auto;
     height: 100%;
-    /* overflow-x: hidden!important; */
+    overflow-x: hidden!important;
 }
 html {
-    overflow-y:scroll;
+    /* overflow-x:hidden; */
 } 
 
 .App {
@@ -67,6 +65,7 @@ html {
     /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
     /* filter: blur(150px); */
     z-index: -99; 
+
 }
 .Vector2 {
     position: absolute;
