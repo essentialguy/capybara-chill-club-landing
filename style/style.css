@@ -64,6 +64,8 @@ html {
     bottom: 0px;
     background: url('../img/Vector1.svg') no-repeat;
     background-size: 100% 100%;
+    background-size: fill;
+
     /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
     /* filter: blur(150px); */
     z-index: -99; 
@@ -80,6 +82,8 @@ html {
     top: 7vh;
     background: url('../img/Vector2.svg') no-repeat;
     background-size: 100% 100%;
+    background-size: fill;
+
     /* background-color: linear-gradient(323.42deg, #15C6BB 42.95%, #17AEB8 66.83%, rgba(51, 208, 199, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     /* background: linear-gradient(323.42deg, #30D9CF 42.95%, #17AEB8 66.83%, rgba(62, 227, 217, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     z-index: -100;    overflow: hidden;
@@ -95,6 +99,7 @@ html {
     top: -339px; */
     background: url('../img/Vector3.svg') no-repeat;
     background-size: 100% 100%;
+    background-size: fill;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
     z-index: -101;    overflow: hidden;
@@ -353,6 +358,7 @@ img {
     .Vector3 {
         left: -60%;
         background: url('../img/Vector3.png') no-repeat;
+        background-size: 100% 100%;
         left: -419.76px;
         top: -639px;
     }
