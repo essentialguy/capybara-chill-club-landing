@@ -14,7 +14,7 @@ body{
     overflow-x: hidden!important;
 }
 html {
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 } 
 
 .App {
@@ -189,8 +189,8 @@ html {
     height: 7680px;
     background: url('../img/Rectangle.png');
     /* background-size: 100% 100%; */
-    z-index: 100;
-    mix-blend-mode: soft-light;
+    z-index: 10;
+    /* mix-blend-mode: soft-light; */
 
     /* overflow: hidden; */
     /* opacity: 0.05; */
