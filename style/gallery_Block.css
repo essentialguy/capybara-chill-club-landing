@@ -108,12 +108,22 @@
         width: 50%;
 
     }
+    .gallery {
+        height: 200vh;
+        
+    }
 }
 
 @media only screen and (max-width: 734px) {
-    
+    .gallery {
+        height: 130vh;
+        
+    }
 }
 
 @media only screen and (max-width: 414px) {
-
+    .gallery {
+        height: 100vh;
+        
+    }
 }
