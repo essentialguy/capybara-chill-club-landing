@@ -67,6 +67,8 @@ html {
     /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
     /* filter: blur(150px); */
     z-index: -99; 
+    overflow: hidden;
+
 
 }
 .Vector2 {
@@ -80,7 +82,8 @@ html {
     background-size: 100% 100%;
     /* background-color: linear-gradient(323.42deg, #15C6BB 42.95%, #17AEB8 66.83%, rgba(51, 208, 199, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     /* background: linear-gradient(323.42deg, #30D9CF 42.95%, #17AEB8 66.83%, rgba(62, 227, 217, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
-    z-index: -100;
+    z-index: -100;    overflow: hidden;
+
 }
 .Vector3 {
     position: absolute;
@@ -94,7 +97,8 @@ html {
     background-size: 100% 100%;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
-    z-index: -101;
+    z-index: -101;    overflow: hidden;
+
 }
 .Vector4 {
     position: absolute;
