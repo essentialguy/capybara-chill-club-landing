@@ -142,7 +142,7 @@
         width: 50%;
     }
     .team {
-        height: 200vh;
+        /* height: 200vh; */
     }
     .team-all-one {
         height: 45vh;
@@ -162,6 +162,9 @@
     .team-all-one {
         width: 100%;
     }
+    .team {
+        height: 200vh;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -175,7 +178,7 @@
         left: -12px;   
     }
     .team {
-        height: 400vh;
+        /* height: 200vh; */
     }
     .team-all-one {
         height: 35vh;
