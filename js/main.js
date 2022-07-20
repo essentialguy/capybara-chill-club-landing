@@ -64,7 +64,7 @@ block_number_1.addEventListener("mouseover", e => {
 
     block_number_0.style.width = '0px';
     block_number_0.style.minWidth = '0px';
-
+    
     block_number_1.style.width = '100%';
     block_number_2.style.width = '169px';
 
@@ -139,26 +139,22 @@ let title_welcome = document.querySelector(".title_welcome");
 let MintNow = document.querySelector(".MintNow");
 //можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 
-// window.addEventListener("scroll", e => {
-//     if (window.scrollY >= $(window).height() + 200) {
-//         if (background_Vector.style.top = '0vh') {
-//             background_Vector.style.top = '100vh';
-//             background_Vector.style.position = 'absolute';
-//             capybara_welcome.style.opacity = '0';
-//             title_welcome.style.opacity = '0';
-//             MintNow.style.opacity = '0';
-//         }
-//     }
-//     else {
-//         if (background_Vector.style.top = '100vh') {
-//             background_Vector.style.top = '0vh';
-//             background_Vector.style.position = 'fixed';
-//             capybara_welcome.style.opacity = '1';
-//             title_welcome.style.opacity = '1';
-//             MintNow.style.opacity = '1';
-//         }
-//     }
-// })
+window.addEventListener("scroll", e => {
+    if (window.scrollY >= $(window).height()) {
+        // background_Vector.style.top = '100vh';
+        // background_Vector.style.position = 'absolute';
+        capybara_welcome.style.opacity = '0';
+        title_welcome.style.opacity = '0';
+        MintNow.style.opacity = '0';
+    }
+    else {
+        // background_Vector.style.top = '0vh';
+        // background_Vector.style.position = 'fixed';
+        capybara_welcome.style.opacity = '1';
+        title_welcome.style.opacity = '1';
+        MintNow.style.opacity = '1';
+    }
+})
 
 // window.onscroll = function () {
 //     if (window.scrollY >= $(window).height()) {
@@ -195,10 +191,10 @@ for (let i = 0; i <= 7; i++) {
 
 
         // if (filter_gallery[i]) {
-        // filter_gallery[i].remove();
+            // filter_gallery[i].remove();
         // }
 
-
+        
         filter_gallery[i].style.transition = '1s';
         filter_gallery[i].style.opacity = '0';
 
@@ -233,22 +229,22 @@ for (let i = 0; i <= 7; i++) {
 }
 
 
-$(document).bind('mousewheel', function (e) {
-    var nt = $(document.body).scrollTop() - (e.deltaY * e.deltaFactor * 100);
-    e.preventDefault();
-    e.stopPropagation();
-    $(document.body).stop().animate({
-        scrollTop: nt
-    }, 500, 'easeInOutCubic');
-})
+$(document).bind( 'mousewheel', function (e) { 
+    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
+    e.preventDefault(); 
+    e.stopPropagation(); 
+    $(document.body).stop().animate( { 
+         scrollTop : nt 
+     } , 500 , 'easeInOutCubic' );  
+} )
 
 var docWidth = document.documentElement.offsetWidth;
 
 [].forEach.call(
-    document.querySelectorAll('*'),
-    function (el) {
-        if (el.offsetWidth > docWidth) {
-            console.log(el);
-        }
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
     }
+  }
 );

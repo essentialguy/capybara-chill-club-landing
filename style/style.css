@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body{
     width: 100%;
@@ -44,13 +50,61 @@ html {
     height: 100%;
 }
 .background_Vector{
-    /* position: absolute; */
+    position: absolute;
     /* background-attachment: fixed; */
     /* position: fixed; */
     width: 100%;
     height: 100%;
     overflow: hidden;
     top: 0vh;
+}
+
+.mobileBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0vh;
+    display: none;
+}
+.mobileVector1 {
+    /* position: absolute;
+    width: 1628px;
+    height: 694.99px;     */
+    /* width: 100%;
+    height: 100%; */
+    /* left: 15vw;
+    top: 35vh;
+    bottom: 0px; */
+    background: url('../img/Vector1.svg') no-repeat;
+    background-size: 100% 100%;
+    background-size: fill;
+}
+.mobileVector2 {
+    /* position: absolute;
+    width: 1628px;
+    height: 694.99px;     */
+    /* width: 100%;
+    height: 100%; */
+    /* left: 15vw;
+    top: 35vh;
+    bottom: 0px; */
+    background: url('../img/Vector1.svg') no-repeat;
+    background-size: 100% 100%;
+    background-size: fill;
+}
+.mobileVector3 {
+    /* position: absolute;
+    width: 1628px;
+    height: 694.99px;     */
+    /* width: 100%;
+    height: 100%; */
+    /* left: 15vw;
+    top: 35vh;
+    bottom: 0px; */
+    background: url('../img/Vector1.svg') no-repeat;
+    background-size: 100% 100%;
+    background-size: fill;
 }
 
 .Vector1 {
@@ -167,11 +221,11 @@ html {
 }
 .Vector9 {
     position: absolute;
-    width: 3365.54px;
+    width: 3465.54px;
     height: 3418.48px;
     width: 200%;
     left: -50%;
-    top: 1575px;
+    top: 2775px;
     background: url('../img/Vector9.svg') no-repeat;
     background-size: 100% 100%;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
@@ -183,10 +237,10 @@ html {
 .Vector10 {
     position: absolute;
     width: 2095.14px;
-    height: 2986.08px;
+    height: 3986.08px;
     width: 200%;
     left: -60%;
-    top: 3818.84px;
+    top: 5018.84px;
     background: url('../img/Vector10.svg') no-repeat;
     background-size: 100% 100%;
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
@@ -337,11 +391,9 @@ img {
     .Vector2 {
         top: 7vh;
         left: -40px;
-
     }
     .Vector3 {
         left: -40%;
-
     }
 }
 

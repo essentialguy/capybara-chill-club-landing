@@ -11,8 +11,15 @@
     /* height: 100vh; */
     top: 0;
     overflow: hidden;
+    z-index: 10;
+}
+.capybara_welcome_block {
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 .capybara_welcome {
+    pointer-events: none;
     position: relative;
     left: 50%;
     margin-top: 185px;
@@ -53,6 +60,7 @@
     top: 535px; */
     font-size: 36px;
     top: 509px;
+    cursor: pointer;
     /* border: 1px solid black; */
     /* -webkit-box-shadow: 
     10px 10px 10px #000, 
@@ -67,6 +75,7 @@
 
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(255, 255, 255, 0.5) inset;
+    z-index: 1000;
 }
 
 .oparcityobject {
@@ -116,8 +125,9 @@
         top: 209px;
     }
     .MintNow {
-        font-size: 26px;
-        top: 425px;
+        /* left: auto; */
+        /* font-size: 26px;
+        top: 425px; */
     }
     .capybara_welcome {
         left: 27%;
@@ -127,18 +137,39 @@
 }
 
 @media only screen and (max-width: 734px) {
+    .boxFirst{
+        height: 100vh;
+    }
     .title_welcome {
         font-size: 60px;
         top: 179px;
     }
     .MintNow {
+        left: auto;
         font-size: 22px;
-        top: 345px;
+        top: 87vh;
+        padding: 19px 27px 19px 28px;
+        /* height: max-content; */
+        /* margin-bottom: -20vh; */
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.7) inset;
     }
     .capybara_welcome {
-        left: 23%;
-        width: 80%;
+        left: auto;
+        width: 100%;
+        height: 80%;
         margin-top: 275px;
+    }
+    .capybara_welcome_block {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .title_welcome {
+        font-size: 44px;
+        top: 149px;
     }
 }
 
@@ -147,8 +178,15 @@
         font-size: 36px;
         top: 149px;
     }
+    .capybara_welcome {
+        left: auto;
+        width: 100%;
+        height: 70%;
+        margin-top: 215px;
+    }
     .MintNow {
+        top: 87vh;
         font-size: 18px;
-        top: 285px;
+        /* top: 285px; */
     }
 }

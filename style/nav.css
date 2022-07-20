@@ -8,6 +8,9 @@ nav{
     align-items: center;
     position:fixed;
     color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .imageLogo {
     width: 104px;
@@ -40,10 +43,10 @@ nav{
 
 @media only screen and (max-width: 734px) {
     nav{
-        width: 85%;
+        width: 100%;
         left: 0%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
         /* right: 4%; */
     }
     .imageLogo {
@@ -60,5 +63,7 @@ nav{
 @media only screen and (max-width: 414px) {
     nav{
         width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
