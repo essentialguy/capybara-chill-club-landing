@@ -1,5 +1,5 @@
 nav{
-    width: 60%;
+    width: 40%;
     height: 60px;
     left: 13.3%;
     z-index: 110;
@@ -12,6 +12,7 @@ nav{
 .imageLogo {
     width: 104px;
     cursor: pointer;
+    display: block;
 }
 .nav_element {
     /* font-weight: 360; */
@@ -19,17 +20,45 @@ nav{
     /* line-height: 18px; */
     /* text-transform: uppercase; */
     font-family: 'SequelSans-RomanHead';
+    font-weight: normal;
     text-transform: uppercase;
     cursor: pointer;
 }
-@media only screen and (max-width: 1400px) {
+
+
+@media only screen and (max-width: 1510px) {
     nav{
-        /* width: 800px; */
+        width: 55%;
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1034px) {
     nav{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    nav{
+        width: 85%;
+        left: 0%;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* right: 4%; */
+    }
+    .imageLogo {
         display: none;
+    }
+    .nav_element {
+        font-style: normal;
+        font-weight: 360;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    nav{
+        width: 100%;
     }
 }
