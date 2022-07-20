@@ -140,7 +140,7 @@ let MintNow = document.querySelector(".MintNow");
 //можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 
 window.addEventListener("scroll", e => {
-    if (window.scrollY >= $(window).height()) {
+    if (window.scrollY >= $(window).height() + 100 ) {
         background_Vector.style.top = '100vh';
         background_Vector.style.position = 'absolute';
         capybara_welcome.style.opacity = '0';
