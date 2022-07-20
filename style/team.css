@@ -164,7 +164,7 @@
         width: 100%;
     }
     .team {
-        height: 200vh;
+        /* height: 200vh; */
     }
     .team__title {
         font-size: 42px;
@@ -185,7 +185,7 @@
         left: -12px;   
     }
     .team {
-        height: 170vh;
+        /* height: 170vh; */
     }
     .team-all-one {
         height: 35vh;
