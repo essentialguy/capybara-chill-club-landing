@@ -158,4 +158,12 @@
     .footer-left__title {
         font-size: 20px;
     }
+    .footer .footer-container-left img {
+        position: absolute;
+        top: 10%;
+    }
+    .footer-left__title {
+        position: absolute;
+        top:40%;    
+    }
 }
