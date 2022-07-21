@@ -393,6 +393,28 @@ $(document).bind('mousewheel', function (e) {
 
 
 let scrollICON = document.querySelector(".scrollICON");
-scrollICON.addEventListener('click', function(){
+let hash_scrollICON_1 = document.getElementById('hash_scrollICON_1');
+let hash_scrollICON_2 = document.getElementById('hash_scrollICON_2');
+let hash_scrollICON_3 = document.getElementById('hash_scrollICON_3');
+let hash_scrollICON_4 = document.getElementById('hash_scrollICON_4');
+let hash_scrollICON_5 = document.getElementById('hash_scrollICON_5');
+
+hash_scrollICON_1.addEventListener('click', function(){
+    
+})
+
+hash_scrollICON_2.addEventListener('click', function(){
+    
+})
+
+hash_scrollICON_3.addEventListener('click', function(){
+    
+})
+
+hash_scrollICON_4.addEventListener('click', function(){
+    
+})
+
+hash_scrollICON_5.addEventListener('click', function(){
     
 })
