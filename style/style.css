@@ -57,6 +57,7 @@ html {
     height: 100%;
     overflow: hidden;
     top: 0vh;
+    display: block;
 }
 
 .mobileBackground {
@@ -68,43 +69,50 @@ html {
     display: none;
 }
 .mobileVector1 {
-    /* position: absolute;
-    width: 1628px;
-    height: 694.99px;     */
+    position: absolute;
+    width: 626px;
+    height: 100vh;    
     /* width: 100%;
     height: 100%; */
-    /* left: 15vw;
-    top: 35vh;
-    bottom: 0px; */
-    background: url('../img/Vector1.svg') no-repeat;
+    /* bottom: 0px; */
+    background: url('../img/Vector1MOBILE.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: fill;
+    /* background-size: fill; */
+    z-index: -100;
 }
+
 .mobileVector2 {
-    /* position: absolute;
-    width: 1628px;
-    height: 694.99px;     */
+    position: absolute;
+    width: 561px;
+    height: 200vh;   
     /* width: 100%;
     height: 100%; */
-    /* left: 15vw;
-    top: 35vh;
+    left: 0vw;
+    /* top: 35vh;
     bottom: 0px; */
-    background: url('../img/Vector1.svg') no-repeat;
+    background: url('../img/Vector2MOBILE.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: fill;
+    /* background-size: fill; */
+    z-index: -101;
 }
 .mobileVector3 {
-    /* position: absolute;
-    width: 1628px;
-    height: 694.99px;     */
+    position: absolute;
+    width: 100%;
+    height: 100%;    
     /* width: 100%;
     height: 100%; */
-    /* left: 15vw;
-    top: 35vh;
-    bottom: 0px; */
-    background: url('../img/Vector1.svg') no-repeat;
-    background-size: 100% 100%;
-    background-size: fill;
+    /* left: 30vw; */
+    /* left: 15vw; */
+    /* top: -35vh; */
+    /* bottom: 0px; */
+    /* background: url('../img/Vector3MOBILE.svg') no-repeat; */
+    /* background-size: 100% 100%; */
+    /* background-size: fill; */
+    z-index: -102;
+}
+.mobileVector3 img {
+    position: relative;
+    top: -215vh;
 }
 
 .Vector1 {
@@ -118,7 +126,7 @@ html {
     bottom: 0px;
     background: url('../img/Vector1.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
     /* filter: blur(150px); */
@@ -136,7 +144,7 @@ html {
     top: 7vh;
     background: url('../img/Vector2.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background-color: linear-gradient(323.42deg, #15C6BB 42.95%, #17AEB8 66.83%, rgba(51, 208, 199, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
     /* background: linear-gradient(323.42deg, #30D9CF 42.95%, #17AEB8 66.83%, rgba(62, 227, 217, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
@@ -153,7 +161,7 @@ html {
     top: -339px; */
     background: url('../img/Vector3.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
     z-index: -101;    overflow: hidden;
@@ -168,7 +176,7 @@ html {
     top: 1689.49px;
     background: url('../img/Vector4.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -185,7 +193,7 @@ html {
     top: 2788.49px;
     background: url('../img/Vector5.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -202,7 +210,7 @@ html {
     top: 3121.9px;
     background: url('../img/Vector6.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -214,12 +222,12 @@ html {
     position: absolute;
     width: 2095.14px;
     height: 2986.08px;
-    width: 100%;
+    /* width: 100%; */
     /* left: 0px; */
     top: 3032.84px;
     background: url('../img/Vector7.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -231,12 +239,12 @@ html {
     position: absolute;
     width: 3465.54px;
     height: 3418.48px;
-    width: 200%;
+    /* width: 200%; */
     left: -50%;
     top: 2775px;
     background: url('../img/Vector9.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -246,14 +254,14 @@ html {
 }
 .Vector10 {
     position: absolute;
-    width: 2095.14px;
+    width: 4095.14px;
     height: 3986.08px;
-    width: 200%;
+    /* width: 200%; */
     left: -60%;
     top: 5018.84px;
     background: url('../img/Vector10.svg') no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+    /* background-size: cover; */
 
     /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
     /* filter: blur(300px); */
@@ -407,6 +415,10 @@ img {
     .Vector3 {
         left: -40%;
     }
+    .Vector10 {
+        top: 5018.84px;
+        left: -250%;
+    }
 }
 
 @media only screen and (max-width: 734px) {
@@ -427,7 +439,13 @@ img {
         top: -639px;
     }
     .Vector9 {
-        top: 2075px;
+        /* top: 2075px; */
+    }
+    .background_Vector {
+        display: none;
+    }
+    .mobileBackground {
+        display: block;
     }
 }
 
