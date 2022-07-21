@@ -111,10 +111,11 @@
 
     }
     .gallery_Block {
+        margin-top: 10vh;
         width: 70%;
     }
     .gallery {
-        /* height: 200vh; */
+        height: 170vh;
         
     }
     .filterimage {
@@ -134,7 +135,7 @@
 
 @media only screen and (max-width: 414px) {
     .gallery {
-        /* height: 120vh; */
+        height: 125vh;
         padding-top: 24px;
     }
     .capybara_none {

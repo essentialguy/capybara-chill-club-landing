@@ -55,7 +55,7 @@
     opacity: 1;
 }
 
-.team-all-one:active {
+/* .team-all-one:active {
     background: url('../img/gradientTeamBackground.svg') no-repeat;
     background-size: 105%;
     transition: 0.6s;
@@ -63,7 +63,7 @@
 
 .team-all-one:active .team-all-one__img img {
     opacity: 1;
-}
+} */
 
 .team-all-one__img {
     position: relative;

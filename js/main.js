@@ -62,6 +62,7 @@ block_number_0.addEventListener("mouseover", e => {
 })
 block_number_0.addEventListener("mouseout", e => {
     const screenWidth = window.screen.width;
+    console.log(screenWidth)
 
     if (screenWidth >= 1510) {
         block_number_0.style.width = '169px';
