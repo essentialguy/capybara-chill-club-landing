@@ -3,7 +3,7 @@ window.onload = function () {
     window.setTimeout(function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
-    }, 500)
+    }, 500);
 }
 
 let block_number_0 = document.querySelectorAll(".block_number_conteiner_block_number")[0];
@@ -23,6 +23,7 @@ let block_text = document.querySelector(".TheChillClubRules_block_text");
 // let block_text_1 = document.querySelectorAll(".TheChillClubRules_block_text")[1];
 // let block_text_2 = document.querySelectorAll(".TheChillClubRules_block_text")[2];
 
+
 block_number_0.addEventListener("mouseover", e => {
 
     block_text.classList.remove('active');
@@ -33,21 +34,72 @@ block_number_0.addEventListener("mouseover", e => {
     // block_text_1.classList.remove('active');
     // block_text_2.classList.remove('active');
 
-    block_number_0.style.width = '100%';
-    block_number_1.style.width = '169px';
-    block_number_2.style.width = '169px';
+    const screenWidth = window.screen.width;
+    // console.log(screenWidth)
+
+    if (screenWidth >= 1510) {
+        console.log(screenWidth)
+
+        block_number_0.style.width = '100%';
+        block_number_1.style.width = '169px';
+        block_number_2.style.width = '169px';
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '100%';
+        block_number_1.style.width = '129px';
+        block_number_2.style.width = '129px';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '100%';
+        block_number_1.style.width = '89px';
+        block_number_2.style.width = '89px';
+    }
+
+    // block_number_0.style.width = '100%';
+    // block_number_1.style.width = '169px';
+    // block_number_2.style.width = '169px';
 
 })
 block_number_0.addEventListener("mouseout", e => {
-    block_number_0.style.width = '169px';
-    block_number_1.style.width = '169px';
-    block_number_2.style.width = '169px';
+    const screenWidth = window.screen.width;
+
+    if (screenWidth >= 1510) {
+        block_number_0.style.width = '169px';
+        block_number_1.style.width = '169px';
+        block_number_2.style.width = '169px';
+        block_number_0.style.minWidth = '169px';
+        block_number_1.style.minWidth = '169px';
+        block_number_2.style.minWidth = '169px';
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '129px';
+        block_number_1.style.width = '129px';
+        block_number_2.style.width = '129px';
+        block_number_0.style.minWidth = '129px';
+        block_number_1.style.minWidth = '129px';
+        block_number_2.style.minWidth = '129px';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '89px';
+        block_number_1.style.width = '89px';
+        block_number_2.style.width = '89px';
+        block_number_0.style.minWidth = '89px';
+        block_number_1.style.minWidth = '89px';
+        block_number_2.style.minWidth = '89px';
+    }
+
+    // block_number_0.style.width = '169px';
+    // block_number_1.style.width = '169px';
+    // block_number_2.style.width = '169px';
+
     block_text.classList.add('active');
     textBlockNumber_0.style.opacity = '0';
     textBlockNumber_0.style.zIndex = '-1';
 });
 
 block_number_1.addEventListener("mouseover", e => {
+    const screenWidth = window.screen.width;
+
     // block_text_0.classList.remove('active');
     // block_text_1.classList.add('active');
     // block_text_2.classList.remove('active');
@@ -56,24 +108,70 @@ block_number_1.addEventListener("mouseover", e => {
     textBlockNumber_1.style.opacity = '1';
     textBlockNumber_1.style.zIndex = '10';
 
-
+    if (screenWidth >= 1510) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '100%';
+        block_number_2.style.width = '169px';
+        block_number_2.style.minWidth = '169px';
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '100%';
+        block_number_2.style.width = '129px';
+        block_number_2.style.minWidth = '129px';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '100%';
+        block_number_2.style.width = '89px';
+        block_number_2.style.minWidth = '89px';
+    }
 
     // block_number_0.style.transition = '1s';
     block_number_0_textNum.style.opacity = '0';
 
 
-    block_number_0.style.width = '0px';
     block_number_0.style.minWidth = '0px';
-    
-    block_number_1.style.width = '100%';
-    block_number_2.style.width = '169px';
+
+    // block_number_0.style.width = '0px';
+    // block_number_1.style.width = '100%';
+    // block_number_2.style.width = '169px';
 
 })
 block_number_1.addEventListener("mouseout", e => {
-    block_number_0.style.width = '169px';
-    block_number_1.style.width = '169px';
-    block_number_2.style.width = '169px';
-    block_number_0.style.minWidth = '169px';
+    const screenWidth = window.screen.width;
+
+    // block_number_0.style.width = '169px';
+    // block_number_1.style.width = '169px';
+    // block_number_2.style.width = '169px';
+
+    if (screenWidth >= 1510) {
+        block_number_0.style.width = '169px';
+        block_number_1.style.width = '169px';
+        block_number_2.style.width = '169px';
+        block_number_0.style.minWidth = '169px';
+        block_number_1.style.minWidth = '169px';
+        block_number_2.style.minWidth = '169px';
+
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '129px';
+        block_number_1.style.width = '129px';
+        block_number_2.style.width = '129px';
+        block_number_0.style.minWidth = '129px';
+        block_number_1.style.minWidth = '129px';
+        block_number_2.style.minWidth = '129px';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '89px';
+        block_number_1.style.width = '89px';
+        block_number_2.style.width = '89px';
+        block_number_0.style.minWidth = '89px';
+        block_number_1.style.minWidth = '89px';
+        block_number_2.style.minWidth = '89px';
+    }
+
+    // block_number_0.style.minWidth = '169px';
     block_text.classList.add('active');
 
     textBlockNumber_1.style.opacity = '0';
@@ -89,6 +187,8 @@ block_number_1.addEventListener("mouseout", e => {
 });
 
 block_number_2.addEventListener("mouseover", e => {
+    const screenWidth = window.screen.width;
+
     block_text.classList.remove('active');
 
     block_number_0.style.opacity = '0';
@@ -104,21 +204,63 @@ block_number_2.addEventListener("mouseover", e => {
     block_number_1_textNum.style.opacity = '0';
     block_number_0_textNum.style.opacity = '0';
 
-    block_number_0.style.width = '0px';
-    block_number_1.style.width = '0px';
-    block_number_2.style.width = '100%';
+    // block_number_0.style.width = '0px';
+    // block_number_1.style.width = '0px';
+    // block_number_2.style.width = '100%';
+
+    if (screenWidth >= 1510) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '0px';
+        block_number_2.style.width = '100%';
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '0px';
+        block_number_2.style.width = '100%';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '0px';
+        block_number_1.style.width = '0px';
+        block_number_2.style.width = '100%';
+    }
 })
 block_number_2.addEventListener("mouseout", e => {
+    const screenWidth = window.screen.width;
+
     block_text.classList.add('active');
 
     block_number_0.style.opacity = '1';
     block_number_1.style.opacity = '1';
 
-    block_number_0.style.width = '169px';
-    block_number_1.style.width = '169px';
-    block_number_2.style.width = '169px';
-    block_number_1.style.minWidth = '169px';
-    block_number_0.style.minWidth = '169px';
+    // block_number_0.style.width = '169px';
+    // block_number_1.style.width = '169px';
+    // block_number_2.style.width = '169px';
+
+
+    if (screenWidth >= 1510) {
+        block_number_0.style.width = '169px';
+        block_number_1.style.width = '169px';
+        block_number_2.style.width = '169px';
+        block_number_2.style.minWidth = '169px';
+        block_number_1.style.minWidth = '169px';
+        block_number_0.style.minWidth = '169px';
+    }
+    else if (screenWidth >= 1034) {
+        block_number_0.style.width = '129px';
+        block_number_1.style.width = '129px';
+        block_number_2.style.width = '129px';
+        block_number_2.style.minWidth = '129px';
+        block_number_1.style.minWidth = '129px';
+        block_number_0.style.minWidth = '129px';
+    }
+    else if (screenWidth >= 734) {
+        block_number_0.style.width = '89px';
+        block_number_1.style.width = '89px';
+        block_number_2.style.width = '89px';
+        block_number_0.style.minWidth = '89px';
+        block_number_1.style.minWidth = '89px';
+        block_number_2.style.minWidth = '89px';
+    }
 
     textBlockNumber_2.style.opacity = '0';
     textBlockNumber_2.style.zIndex = '-1';
@@ -191,10 +333,10 @@ for (let i = 0; i <= 7; i++) {
 
 
         // if (filter_gallery[i]) {
-            // filter_gallery[i].remove();
+        // filter_gallery[i].remove();
         // }
 
-        
+
         filter_gallery[i].style.transition = '1s';
         filter_gallery[i].style.opacity = '0';
 
@@ -229,22 +371,28 @@ for (let i = 0; i <= 7; i++) {
 }
 
 
-$(document).bind( 'mousewheel', function (e) { 
-    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
-    e.preventDefault(); 
-    e.stopPropagation(); 
-    $(document.body).stop().animate( { 
-         scrollTop : nt 
-     } , 500 , 'easeInOutCubic' );  
-} )
+$(document).bind('mousewheel', function (e) {
+    var nt = $(document.body).scrollTop() - (e.deltaY * e.deltaFactor * 100);
+    e.preventDefault();
+    e.stopPropagation();
+    $(document.body).stop().animate({
+        scrollTop: nt
+    }, 500, 'easeInOutCubic');
+})
 
-var docWidth = document.documentElement.offsetWidth;
+// var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+// [].forEach.call(
+//   document.querySelectorAll('*'),
+//   function(el) {
+//     if (el.offsetWidth > docWidth) {
+//       console.log(el);
+//     }
+//   }
+// );
+
+
+let scrollICON = document.querySelector(".scrollICON");
+scrollICON.addEventListener('click', function(){
+    
+})
