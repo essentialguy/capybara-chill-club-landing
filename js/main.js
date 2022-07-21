@@ -38,7 +38,7 @@ block_number_0.addEventListener("mouseover", e => {
     // console.log(screenWidth)
 
     if (screenWidth >= 1510) {
-        console.log(screenWidth)
+        // console.log(screenWidth)
 
         block_number_0.style.width = '100%';
         block_number_1.style.width = '169px';
@@ -62,7 +62,7 @@ block_number_0.addEventListener("mouseover", e => {
 })
 block_number_0.addEventListener("mouseout", e => {
     const screenWidth = window.screen.width;
-    console.log(screenWidth)
+    // console.log(screenWidth)
 
     if (screenWidth >= 1510) {
         block_number_0.style.width = '169px';
@@ -349,7 +349,7 @@ for (let i = 0; i <= 7; i++) {
         // console.log(capybara_none[i])
         // const filter_gallery = document.querySelectorAll('.filter_gallery');
         filterimage[i].style.transition = '8s';
-        rectOparcity[i].style.opacity = '0.05';
+        rectOparcity[i].style.opacity = '1';
 
         filterimage[i].classList.remove('noneFilter');
 
