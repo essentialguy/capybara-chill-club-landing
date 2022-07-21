@@ -62,6 +62,23 @@
     opacity: 1;
 }
 
+.team-all-one:focus {
+    /* background: linear-gradient(rgb(220, 254, 253, 1), rgb(220, 254, 253, 0)); */
+    background: url('../img/gradientTeamBackground.svg') no-repeat;
+    background-size: 105%;
+    /* width: 26%; */
+    transition: 0.6s;
+}
+
+.team-all-one:focus .team-all-one__img img {
+    /* background: linear-gradient(rgb(220, 254, 253, 1), rgb(220, 254, 253, 0)); */
+    /* background: url('../img/gradientTeamBackground.svg') no-repeat; */
+    /* background-size: 105%; */
+    /* width: 26%; */
+    /* transition: 0.6s; */
+    opacity: 1;
+}
+
 .team-all-one__img {
     position: relative;
     height: 80%;
