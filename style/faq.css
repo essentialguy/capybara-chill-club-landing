@@ -99,6 +99,14 @@ details[open] > summary:before {
     transform: rotate(90deg);
 }
 
+summary {
+    display: block;
+  }
+  
+    summary::-webkit-details-marker {
+    display: none;
+  }
+
 @keyframes slide {
     0%    { opacity: 0; transform:  translate(0, -10px); }
     100%  { opacity: 1; transform:  translate(0, 0); }
