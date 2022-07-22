@@ -213,7 +213,9 @@
 
 @media only screen and (max-width: 610px) {
     .team-all-one__img img {
-        left: 13%;
+        /* left: 13%; */
+        right: 0 !important;
+        left: auto;
         transform: scale(1, 1);
         height: 100%;
     }
@@ -221,10 +223,14 @@
 
 @media only screen and (max-width: 540px) {
     .team-all-one__img img {
-        left: 2px;
+        /* left: 2px; */
+        right: 0 !important;
+        left: auto;
         height: 100%;
     }
 }
+
+
 
 @media only screen and (max-width: 470px) {
     .team-all-one__img img {
@@ -253,9 +259,13 @@
     }
     .team-all-one__name_text {
         font-size: 20px;
+        width: 50%;
     }
     .team-all-one__img img {
-        left: -12px;   
+        /* left: -12px;    */
+        right: -40px !important;
+        left: auto;
+        height: 120%;
     }
     .team {
         height: 170vh;
