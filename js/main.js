@@ -374,14 +374,14 @@ for (let i = 0; i <= 7; i++) {
 
 $(document).bind('mousewheel', function (e) {
     var nt = $(document.body).scrollTop() - (e.deltaY * e.deltaFactor * 100);
-    e.preventDefault();
+    // e.preventDefault();
     e.stopPropagation();
     $(document.body).stop().animate({
         scrollTop: nt
     }, 500, 'easeInOutCubic');
 })
 // window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, {passive: false});
-document.addEventListener("mousewheel", this.mousewheel.bind(this), { passive: false });
+// document.addEventListener(handleEvent, { passive: false });
 
 // var docWidth = document.documentElement.offsetWidth;
 
