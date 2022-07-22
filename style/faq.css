@@ -71,8 +71,19 @@
 details:not([open])
 {
     height: 7.25em;
+    opacity: 1;
+
+}
+details:not([open] summary ~ *)
+{
+    /* opacity: 1; */
+    /* height: 7.25em; */
 }
 
+details[open] summary ~ *
+{
+    /* opacity: 0; */
+}
 details[open]
 {
     height: 10.50em;
@@ -80,12 +91,12 @@ details[open]
 
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
-  }
+}
   
-  @keyframes sweep {
+@keyframes sweep {
     0%    {opacity: 0; transform: translateX(-10px)}
     100%  {opacity: 1; transform: translateX(0)}
-  }
+}
 
 
 .faq-full summary:before{
@@ -167,6 +178,15 @@ summary {
         color: #fff;
         transform: translateY(-25%); */
         font-size: 39px;
+    }
+    details:not([open])
+    {
+        height: 4.25em;
+    }
+
+    details[open]
+    {
+        height: 7.50em;
     }
 }
 
