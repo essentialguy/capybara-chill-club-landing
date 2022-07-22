@@ -59,6 +59,7 @@ nav a {
         padding-left: 50px;
         padding-right: 50px;
         /* right: 4%; */
+        display: none;
     }
     .imageLogo {
         display: none;
