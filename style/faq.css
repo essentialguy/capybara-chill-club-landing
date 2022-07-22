@@ -46,6 +46,9 @@
     width: 100%;
     margin-left: 10%;
     margin-right: 10%;
+    transition: 2s;
+    transition: height 1s ease;
+    overflow: hidden;
 }
 .faq-full details summary{
     font-size: 64px;
@@ -61,7 +64,30 @@
     cursor: pointer;
     width: 80%;
     text-align: left;
+    transition: 2s;
+
 }
+
+details:not([open])
+{
+    height: 7.25em;
+}
+
+details[open]
+{
+    height: 10.50em;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+  }
+
+
 .faq-full summary:before{
     content: '+';
     position: absolute;
