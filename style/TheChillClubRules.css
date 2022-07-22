@@ -445,6 +445,7 @@
     .scrollICON {
         width: 104px;
         height: 54px;
+        top: 166px;
     }
     .scrollICON_scroll {
         width: 104px;
@@ -465,10 +466,12 @@
     .scrollICON {
         width: 94px;
         height: 49px;
+        top: 126px;
     }
     .scrollICON_scroll {
         width: 94px;
         height: 49px;
+        top: 126px;
     }
     .MOBILE_topTextBlockNumber {
         width: 70%;
@@ -484,7 +487,7 @@
     .scrollICON {
         width: 74px;
         height: 37px;
-        bottom: 5%;
+        /* bottom: 5%; */
     }
     .scrollICON_scroll {
         width: 74px;
