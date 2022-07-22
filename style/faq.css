@@ -128,12 +128,19 @@ summary {
     }
 }
 
-@media only screen and (max-width: 734px) {
+@media only screen and (max-width: 780px) {
     .faq-full details summary{
         font-size: 26px;
     }
     .faq-details-bottom {
         font-size: 16px;
+    }
+    .faq-full summary:before{
+        top: 0%;
+        /* right: 0;
+        color: #fff;
+        transform: translateY(-25%); */
+        font-size: 39px;
     }
 }
 
@@ -143,5 +150,21 @@ summary {
     }
     .faq-details-bottom {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .faq-full details summary{
+        font-size: 16px;
+    }
+    .faq-details-bottom {
+        font-size: 12px;
+    }
+    .faq-full summary:before{
+        /* top: 0%; */
+        /* right: 0;
+        color: #fff;
+        transform: translateY(-25%); */
+        font-size: 35px;
     }
 }
