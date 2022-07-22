@@ -358,9 +358,9 @@ html {
     position: absolute;
     width: 2053.1px; 
 	height: 119.98px; 
-
     top: 313px;
     left: -81px;
+    
     background-image: url(../img/secondLine.png);
     transform: matrix(-0.99, 0.16, 0.16, 0.99, 0, 0);
     background-position: 0px 0px;
@@ -460,6 +460,5 @@ img {
     }
     .Vector3 {
         left: -80%;
-
     }
 }
