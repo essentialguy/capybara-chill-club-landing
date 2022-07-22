@@ -100,13 +100,8 @@ details[open] > summary:before {
 }
 
 summary {
-    display: block;
-  }
-  
-    summary::-webkit-details-marker {
-    display: none;
-  }
-
+    outline: none;
+}
 @keyframes slide {
     0%    { opacity: 0; transform:  translate(0, -10px); }
     100%  { opacity: 1; transform:  translate(0, 0); }
