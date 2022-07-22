@@ -267,22 +267,27 @@
 .MOBILE_zero_textBlockNumber .MOBILE_topTextBlockNumber {
     color:#00C6BC;
     height: 100vh;
-    height: var(--app-height);
+    min-height: -webkit-fill-available;
+
+    /* height: var(--app-height); */
 }
 .MOBILE_first_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #00A5AF;
     height: 100vh;
-    height: var(--app-height);
+    /* height: var(--app-height); */
+    min-height: -webkit-fill-available;
 }
 .MOBILE_second_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #FFFFFF;
     height: 100vh;
-    height: var(--app-height);
+    /* height: var(--app-height); */
+    min-height: -webkit-fill-available;
 }
 .MOBILE_third_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #FFFFFF;
     height: 100vh;
-    height: var(--app-height);
+    /* height: var(--app-height); */
+    min-height: -webkit-fill-available;
 }
 .MOBILE_topTextBlockNumber {
     font-family: 'SequelSans-LightHead';
