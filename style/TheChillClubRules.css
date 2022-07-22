@@ -371,6 +371,9 @@
 }
 
 @media only screen and (max-width: 734px) {
+    .MOBILE_topTextBlockNumber {
+        font-size: 28px;
+    }
     .block_number_conteiner_block_number {
         font-size: 30px;
     }
@@ -450,6 +453,7 @@
     .MOBILE_topTextBlockNumber {
         font-size: 24px;
         width: 80%;
+        top: 166px;
     }
 }
 
@@ -465,6 +469,9 @@
     .scrollICON_scroll {
         width: 94px;
         height: 49px;
+    }
+    .MOBILE_topTextBlockNumber {
+        width: 70%;
     }
 }
 
@@ -482,6 +489,9 @@
     .scrollICON_scroll {
         width: 74px;
         height: 37px;
-        bottom: 5%;
+        bottom: 10%;
+    }
+    .MOBILE_topTextBlockNumber {
+        width: 65%;
     }
 }

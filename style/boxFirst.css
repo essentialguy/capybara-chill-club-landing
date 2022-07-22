@@ -3,10 +3,10 @@
 } */
 .boxFirst{
     /* display: block; */
-    /* height: 95vh; */
+    height: 90vh;
     width: 100%;
     position: sticky;
-    height: 100vh;
+    /* height: 100vh; */
     /* z-index: -10; */
     /* height: 100vh; */
     top: 0;
@@ -23,7 +23,7 @@
     position: relative;
     left: 50%;
     margin-top: 185px;
-    bottom: -4px;
+    bottom: -9px;
     transition: 1s;
     opacity: 1;
     height: 80%;
@@ -163,6 +163,9 @@
     .capybara_welcome_block {
         display: flex;
         justify-content: center;
+    }
+    .capybara_welcome {
+        height: 80%;
     }
 }
 

@@ -380,6 +380,8 @@ $(document).bind('mousewheel', function (e) {
         scrollTop: nt
     }, 500, 'easeInOutCubic');
 })
+// window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, {passive: false});
+document.addEventListener("mousewheel", this.mousewheel.bind(this), { passive: false });
 
 // var docWidth = document.documentElement.offsetWidth;
 
