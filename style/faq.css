@@ -95,9 +95,9 @@ details {
 details summary::-webkit-details-marker {
     display:none;
 }
-details[open] > summary:before {
+/* details[open] > summary:before {
     transform: rotate(90deg);
-}
+} */
 
 summary {
     outline: none;
