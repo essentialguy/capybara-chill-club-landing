@@ -52,7 +52,7 @@
     font-family: 'SequelSans-MediumHead';
     font-weight: normal;
     color: #FFFFFF;
-    display: block;
+    display: flex;
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 15px;
