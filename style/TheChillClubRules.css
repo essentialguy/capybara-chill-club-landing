@@ -55,6 +55,15 @@
 
 }
 
+:root {
+    --app-height: 100%;
+}
+
+/* .block {
+    height: 100vh;
+    height: var(--app-height);
+} */
+
 .TheChillClubRules_block_text_text {
     position: absolute;
     font-family: 'SequelSans-LightHead';
@@ -257,15 +266,23 @@
 }
 .MOBILE_zero_textBlockNumber .MOBILE_topTextBlockNumber {
     color:#00C6BC;
+    height: 100vh;
+    height: var(--app-height);
 }
 .MOBILE_first_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #00A5AF;
+    height: 100vh;
+    height: var(--app-height);
 }
 .MOBILE_second_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #FFFFFF;
+    height: 100vh;
+    height: var(--app-height);
 }
 .MOBILE_third_textBlockNumber .MOBILE_topTextBlockNumber {
     color: #FFFFFF;
+    height: 100vh;
+    height: var(--app-height);
 }
 .MOBILE_topTextBlockNumber {
     font-family: 'SequelSans-LightHead';
