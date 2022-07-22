@@ -138,8 +138,9 @@
 
 @media only screen and (max-width: 414px) {
     .gallery {
-        height: 125vh;
-        padding-top: 24px;
+        /* height: 125vh; */
+        height: auto;
+        /* padding-top: 24px; */
     }
     .capybara_none {
         width: 49%;
@@ -147,6 +148,7 @@
         margin-top: 5px;
     }
     .gallery_Block {
+        margin-bottom: 10vh;
         width: 98%;
         /* max-height: 100vh; */
     }
