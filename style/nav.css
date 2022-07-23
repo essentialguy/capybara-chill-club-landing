@@ -22,6 +22,19 @@ nav a {
     font-weight: normal;
     text-transform: uppercase;
     cursor: pointer;
+    font-weight: 360;
+    line-height: 18px;
+}
+.navSvgIcon {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.navSvgIcon svg {
+    cursor: pointer;
 }
 .imageLogo {
     width: 104px;
@@ -37,6 +50,8 @@ nav a {
     font-weight: normal;
     text-transform: uppercase;
     cursor: pointer;
+    font-weight: 360;
+    line-height: 18px;
 }
 
 
