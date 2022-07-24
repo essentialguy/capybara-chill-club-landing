@@ -24,6 +24,8 @@ nav a {
     cursor: pointer;
     font-weight: 360;
     line-height: 18px; */
+    font-weight:100;
+
 }
 .navSvgIcon {
     position: absolute;
@@ -47,10 +49,10 @@ nav a {
     /* line-height: 18px; */
     /* text-transform: uppercase; */
     font-family: 'SequelSans-RomanHead';
-    font-weight: normal;
+    /* font-weight: normal; */
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 18px;
 }
 
