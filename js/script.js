@@ -1,17 +1,24 @@
-'use strict';
+// 'use strict';
 
-const isTouchDevice = 'ontouchstart' in document.documentElement;
+// const isTouchDevice = 'ontouchstart' in document.documentElement;
 
-disableScroll();
-if (!isTouchDevice) smoothScroll();
+// disableScroll();
+// if (!isTouchDevice) smoothScroll();
 
-window.onresize = () => {
-    resizeBodyHeight();
-};
-
+// window.onresize = () => {
+//     resizeBodyHeight();
+// };
 window.onload = function () {
-    enableScroll();
-    resizeBodyHeight();
+    // enableScroll();
+    // resizeBodyHeight();
+// const scroll = new Scrooth({
+//     element: window,
+//     strength: 10,
+//     acceleration: 1.5,
+//     deceleration: 0.975,
+// });
+butter.init();
+
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
         document.body.classList.add('loaded');
@@ -19,29 +26,37 @@ window.onload = function () {
     }, 500);
 }
 
+// const scroll = new Scrooth({
+//     element: window,
+//     strength: 10,
+//     acceleration: 1.5,
+//     deceleration: 0.975,
+// });
+
 // Functions
 
-function disableScroll() {
-    document.body.style.overflow = 'hidden';
-}
+// function disableScroll() {
+//     document.body.style.overflow = 'hidden';
+// }
 
-function enableScroll() {
-    document.body.style.overflow = '';
-}
+// function enableScroll() {
+//     document.body.style.overflow = '';
+// }
 
-function smoothScroll() {
-    document.querySelector('.viewport').classList.add('SmoothScroll');
+// function smoothScroll() {
+//     document.querySelector('.boxALL').classList.add('SmoothScroll');
 
-    new SmoothScroll({
-        target: document.querySelector('.container'),
-        scrollEase: 0.08,
-        maxOffset: 500,
-    });
-}
+//     new SmoothScroll({
+//         target: document.querySelector('.container'),
+//         scrollEase: 0.08,
+//         maxOffset: 500,
+        
+//     });
+// }
 
-function resizeBodyHeight() {
-    document.body.style.height = document.querySelector('.viewport').scrollHeight + 'px';
-}
+// function resizeBodyHeight() {
+//     document.body.style.height = document.querySelector('.viewport').scrollHeight + 'px';
+// }
 
 
 
