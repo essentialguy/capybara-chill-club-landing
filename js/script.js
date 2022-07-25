@@ -8,7 +8,7 @@
 // window.onresize = () => {
 //     resizeBodyHeight();
 // };
-window.onload = function () {
+window.onload = async function () {
     // enableScroll();
     // resizeBodyHeight();
     // const scroll = new Scrooth({
@@ -18,10 +18,30 @@ window.onload = function () {
     //     deceleration: 0.975,
     // });
     butter.init({
-        wrapperId: 'butter',
-        wrapperDamper: 0.10,
         cancelOnTouch: true
     });
+    window.addEventListener("scroll", e => {
+        if (window.scrollY >= $(window).height() * 1.2) {
+            // background_Vector.style.top = '100vh';
+            // background_Vector.style.position = 'absolute';
+    
+            // capybara_welcome.style.opacity = '0';
+            // title_welcome.style.opacity = '0';
+            // MintNow.style.opacity = '0';
+    
+            boxFirst.style.opacity = '0';
+        }
+        else {
+            // background_Vector.style.top = '0vh';
+            // background_Vector.style.position = 'fixed';
+    
+            // capybara_welcome.style.opacity = '1';
+            // title_welcome.style.opacity = '1';
+            // MintNow.style.opacity = '1';
+    
+            boxFirst.style.opacity = '1';
+        }
+    })
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
         document.body.classList.add('loaded');
