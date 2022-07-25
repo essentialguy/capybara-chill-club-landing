@@ -5,13 +5,15 @@
     /* display: block; */
     height: 90vh;
     width: 100%;
-    position: sticky;
+    /* position: sticky; */
     /* height: 100vh; */
     /* z-index: -10; */
     /* height: 100vh; */
     top: 0;
     overflow: hidden;
     z-index: -10;
+    opacity: 1;
+    transition: 1s;
 }
 .capybara_welcome_block {
     display: flex;
@@ -44,7 +46,6 @@
     overflow: hidden;
     transition: 1s;
     opacity: 1;
-
 }
 .MintNow {
 	font-family: 'SequelSans-RomanDisp'; 

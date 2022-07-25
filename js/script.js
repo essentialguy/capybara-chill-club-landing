@@ -11,14 +11,17 @@
 window.onload = function () {
     // enableScroll();
     // resizeBodyHeight();
-// const scroll = new Scrooth({
-//     element: window,
-//     strength: 10,
-//     acceleration: 1.5,
-//     deceleration: 0.975,
-// });
-butter.init();
-
+    // const scroll = new Scrooth({
+    //     element: window,
+    //     strength: 10,
+    //     acceleration: 1.5,
+    //     deceleration: 0.975,
+    // });
+    butter.init({
+        wrapperId: 'butter',
+        wrapperDamper: 0.10,
+        cancelOnTouch: true
+    });
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
         document.body.classList.add('loaded');
@@ -336,22 +339,30 @@ let background_Vector = document.querySelector(".background_Vector");
 let capybara_welcome = document.querySelector(".capybara_welcome");
 let title_welcome = document.querySelector(".title_welcome");
 let MintNow = document.querySelector(".MintNow");
+
+let boxFirst = document.querySelector(".boxFirst");
 //можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 
 window.addEventListener("scroll", e => {
-    if (window.scrollY >= $(window).height()) {
+    if (window.scrollY >= $(window).height() * 1.2) {
         // background_Vector.style.top = '100vh';
         // background_Vector.style.position = 'absolute';
-        capybara_welcome.style.opacity = '0';
-        title_welcome.style.opacity = '0';
-        MintNow.style.opacity = '0';
+
+        // capybara_welcome.style.opacity = '0';
+        // title_welcome.style.opacity = '0';
+        // MintNow.style.opacity = '0';
+
+        boxFirst.style.opacity = '0';
     }
     else {
         // background_Vector.style.top = '0vh';
         // background_Vector.style.position = 'fixed';
-        capybara_welcome.style.opacity = '1';
-        title_welcome.style.opacity = '1';
-        MintNow.style.opacity = '1';
+
+        // capybara_welcome.style.opacity = '1';
+        // title_welcome.style.opacity = '1';
+        // MintNow.style.opacity = '1';
+
+        boxFirst.style.opacity = '1';
     }
 })
 
