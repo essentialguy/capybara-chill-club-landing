@@ -18,7 +18,7 @@ window.onload = function () {
     //     deceleration: 0.975,
     // });
     butter.init({
-        wrapperDamper: 0.20,
+        wrapperDamper: 0.15,
         cancelOnTouch: true
     });
     window.addEventListener("scroll", e => {
