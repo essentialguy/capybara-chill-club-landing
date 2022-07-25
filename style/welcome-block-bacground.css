@@ -1,6 +1,6 @@
 .block-bacground {
     top: 0;
-    width: 90vw;
+    width: 98vw;
     height: auto;
     /* max-width: 1520px; */
     margin: 0 auto;
@@ -29,12 +29,12 @@
 
 
 .block-bacground .welcome-block {
-    max-height: 110vh;
+    max-height: 102vh;
 }
 
 .welcome-block-title {
     width: 100%;
-    height: 110vh;
+    height: 102vh;
 }
 .block-bacground .welcome-block .welcome-block-content {
     /* top: 0;
