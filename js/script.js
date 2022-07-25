@@ -8,7 +8,7 @@
 // window.onresize = () => {
 //     resizeBodyHeight();
 // };
-window.onload = async function () {
+window.onload = function () {
     // enableScroll();
     // resizeBodyHeight();
     // const scroll = new Scrooth({
@@ -18,6 +18,7 @@ window.onload = async function () {
     //     deceleration: 0.975,
     // });
     butter.init({
+        wrapperDamper: 0.20,
         cancelOnTouch: true
     });
     window.addEventListener("scroll", e => {
@@ -363,28 +364,28 @@ let MintNow = document.querySelector(".MintNow");
 let boxFirst = document.querySelector(".boxFirst");
 //можно сделать другой фон которые при прокрутке будет моментально исчезать и его высоты будет равна высоте экрана, а фон который будет прокурчиваться оставить либо все как есть, либо сделать его postiion relative 
 
-window.addEventListener("scroll", e => {
-    if (window.scrollY >= $(window).height() * 1.2) {
-        // background_Vector.style.top = '100vh';
-        // background_Vector.style.position = 'absolute';
+// window.addEventListener("scroll", e => {
+//     if (window.scrollY >= $(window).height() * 1.2) {
+//         // background_Vector.style.top = '100vh';
+//         // background_Vector.style.position = 'absolute';
 
-        // capybara_welcome.style.opacity = '0';
-        // title_welcome.style.opacity = '0';
-        // MintNow.style.opacity = '0';
+//         // capybara_welcome.style.opacity = '0';
+//         // title_welcome.style.opacity = '0';
+//         // MintNow.style.opacity = '0';
 
-        boxFirst.style.opacity = '0';
-    }
-    else {
-        // background_Vector.style.top = '0vh';
-        // background_Vector.style.position = 'fixed';
+//         boxFirst.style.opacity = '0';
+//     }
+//     else {
+//         // background_Vector.style.top = '0vh';
+//         // background_Vector.style.position = 'fixed';
 
-        // capybara_welcome.style.opacity = '1';
-        // title_welcome.style.opacity = '1';
-        // MintNow.style.opacity = '1';
+//         // capybara_welcome.style.opacity = '1';
+//         // title_welcome.style.opacity = '1';
+//         // MintNow.style.opacity = '1';
 
-        boxFirst.style.opacity = '1';
-    }
-})
+//         boxFirst.style.opacity = '1';
+//     }
+// })
 
 // window.onscroll = function () {
 //     if (window.scrollY >= $(window).height()) {
