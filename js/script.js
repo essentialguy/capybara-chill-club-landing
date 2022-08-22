@@ -135,25 +135,29 @@ block_number_1.addEventListener("mouseover", e => {
     textBlockNumber_1.style.zIndex = '10';
 
     if (screenWidth >= 1510) {
-        block_number_0.style.width = '169px';
+        block_number_0.style.width = '0px';
+        block_number_0.style.transition = '0';
         block_number_1.style.width = '100%';
         block_number_2.style.width = '169px';
         // block_number_2.style.minWidth = '169px';
     }
     else if (screenWidth >= 1034) {
-        block_number_0.style.width = '129px';
+        block_number_0.style.width = '0px';        block_number_0.style.transition = '0';
+
         block_number_1.style.width = '100%';
         block_number_2.style.width = '129px';
         // block_number_2.style.minWidth = '129px';
     }
     else if (screenWidth >= 734) {
-        block_number_0.style.width = '109px';
+        block_number_0.style.width = '0px';        block_number_0.style.transition = '0';
+
         block_number_1.style.width = '100%';
         block_number_2.style.width = '109px';
         // block_number_2.style.minWidth = '89px';
     }
     else if (screenWidth < 734) {
-        block_number_0.style.width = '89px';
+        block_number_0.style.width = '0px';        block_number_0.style.transition = '0';
+
         block_number_1.style.width = '100%';
         block_number_2.style.width = '89px';
         // block_number_2.style.minWidth = '89px';
@@ -171,59 +175,59 @@ block_number_1.addEventListener("mouseover", e => {
 
 })
 block_number_1.addEventListener("mouseout", e => {
-    const screenWidth = window.innerWidth;
+    // const screenWidth = window.innerWidth;
 
-    // block_number_0.style.width = '169px';
-    // block_number_1.style.width = '169px';
-    // block_number_2.style.width = '169px';
+    // // block_number_0.style.width = '169px';
+    // // block_number_1.style.width = '169px';
+    // // block_number_2.style.width = '169px';
 
-    if (screenWidth >= 1510) {
-        block_number_0.style.width = '169px';
-        block_number_1.style.width = '169px';
-        block_number_2.style.width = '169px';
-        // block_number_0.style.minWidth = '169px';
-        // block_number_1.style.minWidth = '169px';
-        // block_number_2.style.minWidth = '169px';
+    // if (screenWidth >= 1510) {
+    //     block_number_0.style.width = '169px';
+    //     block_number_1.style.width = '169px';
+    //     block_number_2.style.width = '169px';
+    //     // block_number_0.style.minWidth = '169px';
+    //     // block_number_1.style.minWidth = '169px';
+    //     // block_number_2.style.minWidth = '169px';
 
-    }
-    else if (screenWidth >= 1034) {
-        block_number_0.style.width = '129px';
-        block_number_1.style.width = '129px';
-        block_number_2.style.width = '129px';
-        // block_number_0.style.minWidth = '129px';
-        // block_number_1.style.minWidth = '129px';
-        // block_number_2.style.minWidth = '129px';
-    }
-    else if (screenWidth >= 734) {
-        block_number_0.style.width = '109px';
-        block_number_1.style.width = '109px';
-        block_number_2.style.width = '109px';
-        // block_number_0.style.minWidth = '89px';
-        // block_number_1.style.minWidth = '89px';
-        // block_number_2.style.minWidth = '89px';
-    }
-    else if (screenWidth < 734) {
-        block_number_0.style.width = '89px';
-        block_number_1.style.width = '89px';
-        block_number_2.style.width = '89px';
-        // block_number_0.style.minWidth = '89px';
-        // block_number_1.style.minWidth = '89px';
-        // block_number_2.style.minWidth = '89px';
-    }
+    // }
+    // else if (screenWidth >= 1034) {
+    //     block_number_0.style.width = '129px';
+    //     block_number_1.style.width = '129px';
+    //     block_number_2.style.width = '129px';
+    //     // block_number_0.style.minWidth = '129px';
+    //     // block_number_1.style.minWidth = '129px';
+    //     // block_number_2.style.minWidth = '129px';
+    // }
+    // else if (screenWidth >= 734) {
+    //     block_number_0.style.width = '109px';
+    //     block_number_1.style.width = '109px';
+    //     block_number_2.style.width = '109px';
+    //     // block_number_0.style.minWidth = '89px';
+    //     // block_number_1.style.minWidth = '89px';
+    //     // block_number_2.style.minWidth = '89px';
+    // }
+    // else if (screenWidth < 734) {
+    //     block_number_0.style.width = '89px';
+    //     block_number_1.style.width = '89px';
+    //     block_number_2.style.width = '89px';
+    //     // block_number_0.style.minWidth = '89px';
+    //     // block_number_1.style.minWidth = '89px';
+    //     // block_number_2.style.minWidth = '89px';
+    // }
 
-    // block_number_0.style.minWidth = '169px';
-    block_text.classList.add('active');
+    // // block_number_0.style.minWidth = '169px';
+    // block_text.classList.add('active');
 
-    textBlockNumber_1.style.opacity = '0';
-    textBlockNumber_1.style.zIndex = '-1';
-
-
-    // block_number_0.style.transition = '2s';
-    block_number_0_textNum.style.opacity = '1';
+    // textBlockNumber_1.style.opacity = '0';
+    // textBlockNumber_1.style.zIndex = '-1';
 
 
-    // block_text_0.classList.add('active');
-    // block_text_1.classList.remove('active');
+    // // block_number_0.style.transition = '2s';
+    // block_number_0_textNum.style.opacity = '1';
+
+
+    // // block_text_0.classList.add('active');
+    // // block_text_1.classList.remove('active');
 });
 
 block_number_2.addEventListener("mouseover", e => {

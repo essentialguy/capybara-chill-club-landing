@@ -82,7 +82,7 @@
 }
 
 .numBlockNm {
-    right: 75px; 
+    /* right: 75px;  */
 }
 
 .active {
@@ -131,20 +131,20 @@
 .first {
     /* width: 33%; */
     width: 169px;
-    min-width: 169px;
+    /* min-width: 169px; */
     height: 100%;
     background-color: #92F4EF;
     z-index: 1;
-    position: relative;
+    /* position: relative; */
     left:0; 
 }
 
 .second {
     /* width: 33%; */
     width: 169px;
-    min-width: 169px;
+    /* min-width: 169px; */
     height: 100%;
-    position: relative;
+    /* position: relative; */
     left: 0;
     background-color: #32DCD2;
     z-index: 2;
@@ -153,10 +153,10 @@
 
 .third {
     /* width: 33%; */
-    min-width: 169px;
+    /* min-width: 169px; */
     width: 169px;
     height: 100%;  
-    position: relative;
+    /* position: relative; */
     left:0; 
     background-color: #00C1B6;   
     z-index: 3;
@@ -332,16 +332,16 @@
     }
     .first {
         width: 129px;
-        min-width: 129px;
+        /* min-width: 129px; */
     }
     .second {
         width: 129px;
-        min-width: 129px;
+        /* min-width: 129px; */
 
     }
     .third {
         width: 129px;
-        min-width: 129px;
+        /* min-width: 129px; */
 
     }
     .TheChillClubRules_block_title_h1 {
@@ -355,7 +355,7 @@
         width: auto;
     }
     .numBlockNm {
-        right: 57px; 
+        /* right: 57px;  */
     }
     /* .boldFontWeight {
         font-size: 32px;
@@ -368,17 +368,17 @@
     }
     .first {
         width: 109px;
-        min-width: 109px;
+        /* min-width: 109px; */
 
     }
     .second {
         width: 109px;
-        min-width: 109px;
+        /* min-width: 109px; */
 
     }
     .third {
         width: 109px;
-        min-width: 109px;
+        /* min-width: 109px; */
 
     }
     .TheChillClubRules_block_title_h1 {
@@ -388,7 +388,7 @@
         font-size: 28px;
     }
     .numBlockNm {
-        right: 49px; 
+        /* right: 49px;  */
     }
 }
 
@@ -407,16 +407,16 @@
     }
     .first {
         width: 89px;
-        min-width: 89px;
+        /* min-width: 89px; */
     }
     .second {
         width: 89px;
-        min-width: 89px;
+        /* min-width: 89px; */
 
     }
     .third {
         width: 89px;
-        min-width: 89px;
+        /* min-width: 89px; */
 
     }
     .TheChillClubRules_block_title_h1 {

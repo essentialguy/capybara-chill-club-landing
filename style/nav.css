@@ -39,6 +39,7 @@ nav a {
     justify-content: flex-end;
     margin-right: 7%;
     height: 0;
+    z-index: 1000;
 }
 .navSvgIcon svg {
     cursor: pointer;
