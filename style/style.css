@@ -409,7 +409,7 @@ html {
         background-position: 0 0; 
     }
 	to { 
-        background-position: 1000000% 0; 
+        background-position: 1000% 0; 
     }
 }
 

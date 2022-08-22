@@ -52,7 +52,7 @@
     background-repeat:no-repeat;
     background-size: 100% 100%;
     /* bottom: -4px; */
-    filter: blur(10px);
+    /* filter: blur(10px); */
 
     /* transition: 1s; */
 }
@@ -75,7 +75,7 @@
 }
 
 .noneFilter {
-    filter: blur(0px);
+    /* filter: blur(0px); */
 }
 
 .first_capybara_gallery {
