@@ -1,38 +1,13 @@
-
-
-
 window.onload = function () {
-    // enableScroll();
-    // resizeBodyHeight();
-    // const scroll = new Scrooth({
-    //     element: window,
-    //     strength: 10,
-    //     acceleration: 1.5,
-    //     deceleration: 0.975,
-    // });
-    // butter.init({
-    //     wrapperDamper: 0.15,
-    //     cancelOnTouch: true
-    // });
+    butter.init({
+        wrapperDamper: 0.15,
+        cancelOnTouch: true
+    });
     window.addEventListener("scroll", e => {
         if (window.scrollY >= $(window).height() * 1.2) {
-            // background_Vector.style.top = '100vh';
-            // background_Vector.style.position = 'absolute';
-
-            // capybara_welcome.style.opacity = '0';
-            // title_welcome.style.opacity = '0';
-            // MintNow.style.opacity = '0';
-
             boxFirst.style.opacity = '0';
         }
         else {
-            // background_Vector.style.top = '0vh';
-            // background_Vector.style.position = 'fixed';
-
-            // capybara_welcome.style.opacity = '1';
-            // title_welcome.style.opacity = '1';
-            // MintNow.style.opacity = '1';
-
             boxFirst.style.opacity = '1';
         }
     })
@@ -41,81 +16,7 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
-
-    // const isTouchDevice = 'ontouchstart' in document.documentElement;
-
-    // disableScroll();
-    // if (!isTouchDevice) smoothScroll();
-
-    // window.onresize = () => {
-    //     resizeBodyHeight();
-    // };
-
-    // // Functions
-
-    // function disableScroll() {
-    //     document.body.style.overflow = 'hidden';
-    // }
-
-    // function enableScroll() {
-    //     document.body.style.overflow = '';
-    // }
-
-    // function smoothScroll() {
-    //     document.body.classList.add('SmoothScroll');
-
-    //     new SmoothScroll({
-    //         target: document.body,
-    //         strength: 10,
-    //         acceleration: 1.2,
-    //         deceleration: 1.975
-    //     });
-    // }
-
-    // function resizeBodyHeight() {
-    //     document.body.style.height = document.body.scrollHeight + 'px';
-    // }
-
-    // enableScroll();
-    // resizeBodyHeight();
-    // const body = new Scrooth();
 }
-
-// const scroll = new Scrooth({
-//     element: window,
-//     strength: 10,
-//     acceleration: 1.5,
-//     deceleration: 0.975,
-// });
-
-// Functions
-
-// function disableScroll() {
-//     document.body.style.overflow = 'hidden';
-// }
-
-// function enableScroll() {
-//     document.body.style.overflow = '';
-// }
-
-// function smoothScroll() {
-//     document.querySelector('.boxALL').classList.add('SmoothScroll');
-
-//     new SmoothScroll({
-//         target: document.querySelector('.container'),
-//         scrollEase: 0.08,
-//         maxOffset: 500,
-
-//     });
-// }
-
-// function resizeBodyHeight() {
-//     document.body.style.height = document.querySelector('.viewport').scrollHeight + 'px';
-// }
-
-
-
-
 
 let block_number_0 = document.querySelectorAll(".block_number_conteiner_block_number")[0];
 let block_number_1 = document.querySelectorAll(".block_number_conteiner_block_number")[1];
@@ -145,8 +46,8 @@ block_number_0.addEventListener("mouseover", e => {
     // block_text_1.classList.remove('active');
     // block_text_2.classList.remove('active');
 
-    const screenWidth = window.screen.width;
-    // console.log(screenWidth)
+    const screenWidth = window.innerWidth;
+    console.log(screenWidth)
 
     if (screenWidth >= 1510) {
         // console.log(screenWidth)
@@ -162,6 +63,11 @@ block_number_0.addEventListener("mouseover", e => {
     }
     else if (screenWidth >= 734) {
         block_number_0.style.width = '100%';
+        block_number_1.style.width = '109px';
+        block_number_2.style.width = '109px';
+    }
+    else if (screenWidth < 734) {
+        block_number_0.style.width = '100%';
         block_number_1.style.width = '89px';
         block_number_2.style.width = '89px';
     }
@@ -172,8 +78,8 @@ block_number_0.addEventListener("mouseover", e => {
 
 })
 block_number_0.addEventListener("mouseout", e => {
-    const screenWidth = window.screen.width;
-    // console.log(screenWidth)
+    const screenWidth = window.innerWidth;
+    console.log(screenWidth)
 
     if (screenWidth >= 1510) {
         block_number_0.style.width = '169px';
@@ -192,6 +98,14 @@ block_number_0.addEventListener("mouseout", e => {
         block_number_2.style.minWidth = '129px';
     }
     else if (screenWidth >= 734) {
+        block_number_0.style.width = '109px';
+        block_number_1.style.width = '109px';
+        block_number_2.style.width = '109px';
+        block_number_0.style.minWidth = '109px';
+        block_number_1.style.minWidth = '109px';
+        block_number_2.style.minWidth = '109px';
+    }
+    else if (screenWidth < 734) {
         block_number_0.style.width = '89px';
         block_number_1.style.width = '89px';
         block_number_2.style.width = '89px';
@@ -210,7 +124,7 @@ block_number_0.addEventListener("mouseout", e => {
 });
 
 block_number_1.addEventListener("mouseover", e => {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
 
     // block_text_0.classList.remove('active');
     // block_text_1.classList.add('active');
@@ -221,29 +135,35 @@ block_number_1.addEventListener("mouseover", e => {
     textBlockNumber_1.style.zIndex = '10';
 
     if (screenWidth >= 1510) {
-        block_number_0.style.width = '0px';
+        block_number_0.style.width = '169px';
         block_number_1.style.width = '100%';
         block_number_2.style.width = '169px';
-        block_number_2.style.minWidth = '169px';
+        // block_number_2.style.minWidth = '169px';
     }
     else if (screenWidth >= 1034) {
-        block_number_0.style.width = '0px';
+        block_number_0.style.width = '129px';
         block_number_1.style.width = '100%';
         block_number_2.style.width = '129px';
-        block_number_2.style.minWidth = '129px';
+        // block_number_2.style.minWidth = '129px';
     }
     else if (screenWidth >= 734) {
-        block_number_0.style.width = '0px';
+        block_number_0.style.width = '109px';
+        block_number_1.style.width = '100%';
+        block_number_2.style.width = '109px';
+        // block_number_2.style.minWidth = '89px';
+    }
+    else if (screenWidth < 734) {
+        block_number_0.style.width = '89px';
         block_number_1.style.width = '100%';
         block_number_2.style.width = '89px';
-        block_number_2.style.minWidth = '89px';
+        // block_number_2.style.minWidth = '89px';
     }
 
     // block_number_0.style.transition = '1s';
-    block_number_0_textNum.style.opacity = '0';
+    // block_number_0_textNum.style.opacity = '0';
 
 
-    block_number_0.style.minWidth = '0px';
+    // block_number_0.style.minWidth = '129px';
 
     // block_number_0.style.width = '0px';
     // block_number_1.style.width = '100%';
@@ -251,7 +171,7 @@ block_number_1.addEventListener("mouseover", e => {
 
 })
 block_number_1.addEventListener("mouseout", e => {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
 
     // block_number_0.style.width = '169px';
     // block_number_1.style.width = '169px';
@@ -261,26 +181,34 @@ block_number_1.addEventListener("mouseout", e => {
         block_number_0.style.width = '169px';
         block_number_1.style.width = '169px';
         block_number_2.style.width = '169px';
-        block_number_0.style.minWidth = '169px';
-        block_number_1.style.minWidth = '169px';
-        block_number_2.style.minWidth = '169px';
+        // block_number_0.style.minWidth = '169px';
+        // block_number_1.style.minWidth = '169px';
+        // block_number_2.style.minWidth = '169px';
 
     }
     else if (screenWidth >= 1034) {
         block_number_0.style.width = '129px';
         block_number_1.style.width = '129px';
         block_number_2.style.width = '129px';
-        block_number_0.style.minWidth = '129px';
-        block_number_1.style.minWidth = '129px';
-        block_number_2.style.minWidth = '129px';
+        // block_number_0.style.minWidth = '129px';
+        // block_number_1.style.minWidth = '129px';
+        // block_number_2.style.minWidth = '129px';
     }
     else if (screenWidth >= 734) {
+        block_number_0.style.width = '109px';
+        block_number_1.style.width = '109px';
+        block_number_2.style.width = '109px';
+        // block_number_0.style.minWidth = '89px';
+        // block_number_1.style.minWidth = '89px';
+        // block_number_2.style.minWidth = '89px';
+    }
+    else if (screenWidth < 734) {
         block_number_0.style.width = '89px';
         block_number_1.style.width = '89px';
         block_number_2.style.width = '89px';
-        block_number_0.style.minWidth = '89px';
-        block_number_1.style.minWidth = '89px';
-        block_number_2.style.minWidth = '89px';
+        // block_number_0.style.minWidth = '89px';
+        // block_number_1.style.minWidth = '89px';
+        // block_number_2.style.minWidth = '89px';
     }
 
     // block_number_0.style.minWidth = '169px';
@@ -299,45 +227,50 @@ block_number_1.addEventListener("mouseout", e => {
 });
 
 block_number_2.addEventListener("mouseover", e => {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
 
     block_text.classList.remove('active');
 
-    block_number_0.style.opacity = '0';
-    block_number_1.style.opacity = '0';
+    // block_number_0.style.opacity = '0';
+    // block_number_1.style.opacity = '0';
 
-    block_number_0.style.minWidth = '0px';
-    block_number_1.style.minWidth = '0px';
+    // block_number_0.style.minWidth = '0px';
+    // block_number_1.style.minWidth = '0px';
 
-    textBlockNumber_2.style.opacity = '1';
+    // textBlockNumber_2.style.opacity = '1';
 
-    textBlockNumber_2.style.zIndex = '10';
+    // textBlockNumber_2.style.zIndex = '10';
 
-    block_number_1_textNum.style.opacity = '0';
-    block_number_0_textNum.style.opacity = '0';
+    // block_number_1_textNum.style.opacity = '0';
+    // block_number_0_textNum.style.opacity = '0';
 
     // block_number_0.style.width = '0px';
     // block_number_1.style.width = '0px';
     // block_number_2.style.width = '100%';
 
     if (screenWidth >= 1510) {
-        block_number_0.style.width = '0px';
-        block_number_1.style.width = '0px';
+        block_number_0.style.width = '169px';
+        block_number_1.style.width = '169px';
         block_number_2.style.width = '100%';
     }
     else if (screenWidth >= 1034) {
-        block_number_0.style.width = '0px';
-        block_number_1.style.width = '0px';
+        block_number_0.style.width = '129px';
+        block_number_1.style.width = '129px';
         block_number_2.style.width = '100%';
     }
     else if (screenWidth >= 734) {
-        block_number_0.style.width = '0px';
-        block_number_1.style.width = '0px';
+        block_number_0.style.width = '109px';
+        block_number_1.style.width = '109px';
+        block_number_2.style.width = '100%';
+    }
+    else if (screenWidth < 734) {
+        block_number_0.style.width = '89px';
+        block_number_1.style.width = '89px';
         block_number_2.style.width = '100%';
     }
 })
 block_number_2.addEventListener("mouseout", e => {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
 
     block_text.classList.add('active');
 
@@ -353,25 +286,33 @@ block_number_2.addEventListener("mouseout", e => {
         block_number_0.style.width = '169px';
         block_number_1.style.width = '169px';
         block_number_2.style.width = '169px';
-        block_number_2.style.minWidth = '169px';
-        block_number_1.style.minWidth = '169px';
-        block_number_0.style.minWidth = '169px';
+        // block_number_2.style.minWidth = '169px';
+        // block_number_1.style.minWidth = '169px';
+        // block_number_0.style.minWidth = '169px';
     }
     else if (screenWidth >= 1034) {
         block_number_0.style.width = '129px';
         block_number_1.style.width = '129px';
         block_number_2.style.width = '129px';
-        block_number_2.style.minWidth = '129px';
-        block_number_1.style.minWidth = '129px';
-        block_number_0.style.minWidth = '129px';
+        // block_number_2.style.minWidth = '129px';
+        // block_number_1.style.minWidth = '129px';
+        // block_number_0.style.minWidth = '129px';
     }
     else if (screenWidth >= 734) {
+        block_number_0.style.width = '109px';
+        block_number_1.style.width = '109px';
+        block_number_2.style.width = '109px';
+        // block_number_0.style.minWidth = '89px';
+        // block_number_1.style.minWidth = '89px';
+        // block_number_2.style.minWidth = '89px';
+    }
+    else if (screenWidth < 734) {
         block_number_0.style.width = '89px';
         block_number_1.style.width = '89px';
         block_number_2.style.width = '89px';
-        block_number_0.style.minWidth = '89px';
-        block_number_1.style.minWidth = '89px';
-        block_number_2.style.minWidth = '89px';
+        // block_number_0.style.minWidth = '89px';
+        // block_number_1.style.minWidth = '89px';
+        // block_number_2.style.minWidth = '89px';
     }
 
     textBlockNumber_2.style.opacity = '0';
@@ -542,11 +483,11 @@ for (let i = 0; i <= 7; i++) {
 // })
 
 
-const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', appHeight)
-appHeight()
+// const appHeight = () => {
+//     const doc = document.documentElement
+//     doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+// }
+// window.addEventListener('resize', appHeight)
+// appHeight()
 
 
