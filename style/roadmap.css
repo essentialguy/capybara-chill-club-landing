@@ -7,11 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* margin-left: 20px;
-    margin-right: 20px; */
 }
-
-
 .TBA {
     position: absolute;
     width: 100%;
@@ -23,29 +19,20 @@
     padding: 0;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); 
-    /* filter: blur(40px);    */
     background-color: rgba(255, 255, 255, 0.09); 
     color: white;
-    font-size: 92px;
-    /* font-family: 'SequelSans-LightHead'; */
-    
+    font-size: 92px;    
     z-index: 1000;
     font-family: 'SequelSans-RomanHead';
     box-shadow: 10px rgba(255, 255, 255, 0.7);
 }
-
 .roadmap_block_noise {
     position: relative;
     width: auto;
     height: 100%;
-    /* left: 0;
-    top: 0; */
     margin: 0;
     padding: 0; 
-    /* background-color: rgba(255, 255, 255, 0.09);  */
     z-index: 100;
-    /* background: url('../img/Rectangle.svg'), rgba(255, 255, 255, 0.2); */
-
 }
 .rect_CCC_RM {
     position: absolute;
@@ -56,50 +43,28 @@
     z-index: 102;
     background: url('../img/Rectangle.svg'), rgba(255, 255, 255, 0.1);
 }
-
 .roadmap_block {
     position: relative;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    
-    /* background: #00929B; */
-    /* background: url('../img/Rectangle.svg'), rgba(255, 255, 255, 0.2); */
-    /* background-image: url('../img/CCC_RM.png'); */
-    /* background-size: contain; */
-    /* background-repeat: repeat;
-    background-position: 50%;
-    height: 896px;
-    width: 80%; */
     z-index: 101;
-    /* filter: blur(40px); */
-
 }
 
 @media only screen and (max-width: 1510px) {
     .roadmap_block {
         height: 696px;
-        /* width: 696px !important; */
     }
 }
-
 @media only screen and (max-width: 1034px) {
     .roadmap_block {
         height: 596px;
-        /* width: 596px !important; */
     }
 }
-
 @media only screen and (max-width: 734px) {
     .roadmap_block {
         height: 496px;
-        /* width: 496px !important; */
     }
 }
-
 @media only screen and (max-width: 414px) {
     .roadmap_block {
         height: 336px;
-        /* width: 396px !important; */
     }
 }

@@ -40,4 +40,6 @@ class Scrooth {
     }
   }
   
-//   const body = new Scrooth();
+  const scroll = new Scrooth({
+    element: document.body
+});

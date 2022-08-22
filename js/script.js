@@ -1,13 +1,6 @@
-// 'use strict';
 
-// const isTouchDevice = 'ontouchstart' in document.documentElement;
 
-// disableScroll();
-// if (!isTouchDevice) smoothScroll();
 
-// window.onresize = () => {
-//     resizeBodyHeight();
-// };
 window.onload = function () {
     // enableScroll();
     // resizeBodyHeight();
@@ -17,29 +10,29 @@ window.onload = function () {
     //     acceleration: 1.5,
     //     deceleration: 0.975,
     // });
-    butter.init({
-        wrapperDamper: 0.15,
-        cancelOnTouch: true
-    });
+    // butter.init({
+    //     wrapperDamper: 0.15,
+    //     cancelOnTouch: true
+    // });
     window.addEventListener("scroll", e => {
         if (window.scrollY >= $(window).height() * 1.2) {
             // background_Vector.style.top = '100vh';
             // background_Vector.style.position = 'absolute';
-    
+
             // capybara_welcome.style.opacity = '0';
             // title_welcome.style.opacity = '0';
             // MintNow.style.opacity = '0';
-    
+
             boxFirst.style.opacity = '0';
         }
         else {
             // background_Vector.style.top = '0vh';
             // background_Vector.style.position = 'fixed';
-    
+
             // capybara_welcome.style.opacity = '1';
             // title_welcome.style.opacity = '1';
             // MintNow.style.opacity = '1';
-    
+
             boxFirst.style.opacity = '1';
         }
     })
@@ -48,6 +41,44 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
+
+    // const isTouchDevice = 'ontouchstart' in document.documentElement;
+
+    // disableScroll();
+    // if (!isTouchDevice) smoothScroll();
+
+    // window.onresize = () => {
+    //     resizeBodyHeight();
+    // };
+
+    // // Functions
+
+    // function disableScroll() {
+    //     document.body.style.overflow = 'hidden';
+    // }
+
+    // function enableScroll() {
+    //     document.body.style.overflow = '';
+    // }
+
+    // function smoothScroll() {
+    //     document.body.classList.add('SmoothScroll');
+
+    //     new SmoothScroll({
+    //         target: document.body,
+    //         strength: 10,
+    //         acceleration: 1.2,
+    //         deceleration: 1.975
+    //     });
+    // }
+
+    // function resizeBodyHeight() {
+    //     document.body.style.height = document.body.scrollHeight + 'px';
+    // }
+
+    // enableScroll();
+    // resizeBodyHeight();
+    // const body = new Scrooth();
 }
 
 // const scroll = new Scrooth({
@@ -74,7 +105,7 @@ window.onload = function () {
 //         target: document.querySelector('.container'),
 //         scrollEase: 0.08,
 //         maxOffset: 500,
-        
+
 //     });
 // }
 
@@ -491,23 +522,23 @@ for (let i = 0; i <= 7; i++) {
 // let hash_scrollICON_5 = document.getElementById('hash_scrollICON_5');
 
 // hash_scrollICON_1.addEventListener('click', function(){
-    
+
 // })
 
 // hash_scrollICON_2.addEventListener('click', function(){
-    
+
 // })
 
 // hash_scrollICON_3.addEventListener('click', function(){
-    
+
 // })
 
 // hash_scrollICON_4.addEventListener('click', function(){
-    
+
 // })
 
 // hash_scrollICON_5.addEventListener('click', function(){
-    
+
 // })
 
 
