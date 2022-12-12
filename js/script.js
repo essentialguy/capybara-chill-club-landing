@@ -40,6 +40,8 @@ block_number_0.addEventListener("mouseover", e => {
 
     block_text.classList.remove('active');
     textBlockNumber_0.style.opacity = '1';
+
+
     textBlockNumber_0.style.zIndex = '10';
 
     // block_text_0.classList.add('active');
@@ -47,7 +49,6 @@ block_number_0.addEventListener("mouseover", e => {
     // block_text_2.classList.remove('active');
 
     const screenWidth = window.screen.width;
-    // console.log(screenWidth)
 
     if (screenWidth >= 1510) {
         // console.log(screenWidth)
